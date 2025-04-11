@@ -49,3 +49,24 @@ body {
 	font-size: 18px;
 	color: #ccc;
 }
+.navigation {
+	margin-top: 15px;
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	flex-wrap: wrap;
+}
+
+.navigation a {
+	text-decoration: none;
+	color: #0077b5;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.navigation a:hover {
+	text-decoration: underline;
+}
+main {
+	margin-top: 30px;
+}
