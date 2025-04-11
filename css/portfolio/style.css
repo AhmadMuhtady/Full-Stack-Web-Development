@@ -115,3 +115,9 @@ section ul li {
 	border-radius: 10px;
 	font-size: 14px;
 }
+footer {
+	text-align: center;
+	margin-top: 40px;
+	font-size: 14px;
+	color: #666;
+}
