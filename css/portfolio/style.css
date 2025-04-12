@@ -9,7 +9,7 @@ body {
 	font-family: Arial, sans-serif;
 	color: #333;
 	line-height: 1.6;
-	padding: 20px;
+	padding: 10px;
 }
 
 /* Header section */
@@ -115,6 +115,16 @@ section ul li {
 	border-radius: 10px;
 	font-size: 14px;
 }
+.experience ul,
+.education ul,
+.certifications ul {
+	text-align: center;
+	list-style-position: inside;
+}
+.experience h4 {
+	text-align: center;
+}
+
 footer {
 	text-align: center;
 	margin-top: 40px;
