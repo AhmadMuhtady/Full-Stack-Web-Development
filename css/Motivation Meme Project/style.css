@@ -5,6 +5,8 @@ h1 {
 	font-family: 'Libre Baskerville', serif;
 	font-weight: 400;
 	font-style: normal;
+	text-transform: uppercase;
+	font-size: x-large;
 }
 p {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -20,7 +22,7 @@ p {
 		#ff58c0,
 		#ff007b,
 		#ff58c0,
-		#ff9cf7
+		#0f020e
 	);
 	background-size: 600% 600%;
 	animation: rgb-border 2s linear infinite;
@@ -50,4 +52,7 @@ p {
 	margin-top: 100px;
 	color: white;
 	text-align: center;
+}
+
+.MEME img {
 }
