@@ -18,24 +18,27 @@ footer {
 	text-align: right;
 	color: midnightblue;
 }
+
 .tile-image {
-	float: left;
 	height: 200px;
-	margin: 50px;
+	float: left;
+	margin-right: 50px;
 }
 
 .card {
 	width: 45%;
 }
+
 .left {
 	float: left;
 }
+
 .right {
 	float: right;
 }
 
-span {
-	color: blueviolet;
+.creative {
+	color: midnightblue;
 }
 
 @media (max-width: 680px) {
