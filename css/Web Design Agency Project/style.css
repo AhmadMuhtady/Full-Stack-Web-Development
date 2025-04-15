@@ -19,3 +19,9 @@ footer {
 	color: midnightblue;
 	clear: both;
 }
+span {
+	color: blueviolet;
+}
+.tile-image {
+	float: left;
+}
