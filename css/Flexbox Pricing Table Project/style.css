@@ -1,3 +1,9 @@
+@media (max-width: 1250px) {
+	.pricing-container {
+		flex-direction: column;
+		height: 100%;
+	}
+}
 .pricing-container {
 	display: flex;
 	justify-content: center;
@@ -6,14 +12,16 @@
 	height: 100vh;
 }
 .pricing-plan {
+	flex: 1;
 	text-align: center;
 	background-color: rgb(194, 236, 250);
 	border: 2px thin black;
-	flex-basis: 500px;
+	max-width: 500px;
 	height: 300px;
 	border-radius: 5%;
 	font-size: large;
 	margin-bottom: 10px;
+	padding: 20px;
 }
 ul {
 	list-style: none;
@@ -27,6 +35,7 @@ ul {
 	height: 30px;
 	color: white;
 	margin-top: 10px;
+	border: none;
 }
 .plan-price {
 	font-size: 3rem;
