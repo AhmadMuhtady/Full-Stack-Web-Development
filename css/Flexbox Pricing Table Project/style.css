@@ -1,0 +1,15 @@
+.pricing-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3px;
+}
+.pricing-plan {
+	text-align: center;
+	background-color: bisque;
+	border: 2px solid black;
+	flex-basis: 300px;
+}
+ul {
+	list-style: none;
+}
