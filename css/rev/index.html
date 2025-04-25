@@ -24,6 +24,7 @@
 			font-weight: bold;
 			border-radius: 4px;
 			cursor: pointer;
+			transition: opacity 0.14s;
 		}
 		.youtube:hover {
 			opacity: 0.7;
@@ -43,10 +44,14 @@
 			cursor: pointer;
 			border-color: blue;
 			border-width: thin;
+			transition: background-color 0.15s, color 0.15s;
 		}
 		.fb:hover {
 			color: white;
 			background-color: rgb(72, 72, 212);
+		}
+		.fb:active {
+			opacity: 0.7;
 		}
 		.tweet {
 			background-color: rgb(45, 113, 250);
@@ -59,6 +64,10 @@
 			border-radius: 20px;
 			cursor: pointer;
 			border-width: thin;
+			transition: box-shadow 0.15s;
+		}
+		.tweet:hover {
+			box-shadow: 3px 3px 10px black;
 		}
 	</style>
 	<body>
