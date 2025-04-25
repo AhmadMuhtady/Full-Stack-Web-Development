@@ -65,3 +65,42 @@ body {
 	justify-content: flex-start;
 	justify-items: center;
 }
+
+.left-nav {
+	width: 200px;
+	height: 100vh;
+	background-color: #f9f9f9;
+	border-right: 1px solid #ccc;
+	padding-top: 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.container-lft {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 0 10px;
+}
+
+.side-btn {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	background: none;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	font-size: 16px;
+	border-radius: 6px;
+	transition: background 0.3s;
+}
+
+.side-btn img {
+	height: 20px;
+}
+
+.side-btn:hover {
+	background-color: #e6e6e6;
+}
