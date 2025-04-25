@@ -105,3 +105,11 @@ body {
 .side-btn:hover {
 	background-color: #e6e6e6;
 }
+
+.mid-genre {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 900px;
+	margin-left: 300px;
+}
