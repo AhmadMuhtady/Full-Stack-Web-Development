@@ -11,3 +11,9 @@ b = c;
 
 console.log('a is ' + a);
 console.log('b is ' + b);
+
+var greeting = 'Hello';
+var myName = 'Ahmad';
+var greet = greeting + ' there ' + myName;
+console.log(greet);
+console.log(greet.length);
