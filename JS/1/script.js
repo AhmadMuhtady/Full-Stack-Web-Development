@@ -17,3 +17,18 @@ var myName = 'Ahmad';
 var greet = greeting + ' there ' + myName;
 console.log(greet);
 console.log(greet.length);
+
+var para = prompt('please enter your paragraph!');
+var chrectersWrittern = para.length;
+var remaining = 280 - chrectersWrittern;
+alert(
+	'you have written ' + chrectersWrittern + ' charecters remaing ' + remaining
+);
+
+var para = prompt('please enter your paragraph!');
+alert(
+	'you have written ' +
+		para.length +
+		' Charecters remaining ' +
+		(280 - para.length)
+);
