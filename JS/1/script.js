@@ -34,3 +34,8 @@ alert(
 );
 
 alert(prompt('please enter your message').slice(0, 140));
+
+name = prompt('Please enter your name!');
+var firstCas = name.slice(0, 1).toUpperCase();
+var rest = name.slice(1, name.length).toLocaleLowerCase();
+alert('Hello ' + firstCas + rest);
