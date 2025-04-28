@@ -32,3 +32,5 @@ alert(
 		' Charecters remaining ' +
 		(280 - para.length)
 );
+
+alert(prompt('please enter your message').slice(0, 140));
