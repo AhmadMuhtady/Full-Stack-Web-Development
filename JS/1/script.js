@@ -39,3 +39,28 @@ name = prompt('Please enter your name!');
 var firstCas = name.slice(0, 1).toUpperCase();
 var rest = name.slice(1, name.length).toLocaleLowerCase();
 alert('Hello ' + firstCas + rest);
+
+function getMilk(money) {
+	console.log('leaveHouse');
+	console.log('moveRight');
+	console.log('moveRight');
+	console.log('moveUp');
+	console.log('moveUp');
+	console.log('moveUp');
+	console.log('moveUp');
+	console.log('moveRight');
+	console.log('moveRight');
+	var numbersOfBottels = Math.floor(money / 1.5);
+	console.log('I bought ' + numbersOfBottels + ' bottels of milk');
+	console.log('moveLeft');
+	console.log('moveLeft');
+	console.log('moveDown');
+	console.log('moveDown');
+	console.log('moveDown');
+	console.log('moveDown');
+	console.log('moveLeft');
+	console.log('moveLeft');
+	console.log('enterHouse');
+}
+
+getMilk(14);
