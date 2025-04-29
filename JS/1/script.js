@@ -83,7 +83,7 @@ function ageLeftCalculator(myAge) {
 
 ageLeftCalculator(32);
 
-function getMilk(money) {
+function getMilk(money, costOfButtle) {
 	console.log('leaveHouse');
 	console.log('moveRight');
 	console.log('moveRight');
@@ -93,7 +93,9 @@ function getMilk(money) {
 	console.log('moveUp');
 	console.log('moveRight');
 	console.log('moveRight');
-	console.log('I bought ' + culOfButtles(money, 1.5) + ' bottels of milk');
+	console.log(
+		'I bought ' + culOfButtles(money, costOfButtle) + ' bottels of milk'
+	);
 	console.log('moveLeft');
 	console.log('moveLeft');
 	console.log('moveDown');
@@ -103,10 +105,12 @@ function getMilk(money) {
 	console.log('moveLeft');
 	console.log('moveLeft');
 	console.log('enterHouse');
-	console.log('The remaining money is ' + calChange(money, 1.5) + ' $.');
+	console.log(
+		'The remaining money is ' + calChange(money, costOfButtle) + ' $.'
+	);
 }
 
-getMilk(14);
+getMilk(14, 1.5);
 
 function culOfButtles(money, costOfButtle) {
 	var numbersOfBottels = Math.floor(money / costOfButtle);
