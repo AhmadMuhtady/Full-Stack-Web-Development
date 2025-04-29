@@ -64,3 +64,21 @@ function getMilk(money) {
 }
 
 getMilk(14);
+
+function ageLeftCalculator(myAge) {
+	var ageLeft = 90 - myAge;
+	var daysLeft = ageLeft * 365;
+	var weeksLeft = ageLeft * 52;
+	var monthLeft = ageLeft * 12;
+	console.log(
+		'You have ' +
+			daysLeft +
+			' days, ' +
+			weeksLeft +
+			' weeks, ' +
+			monthLeft +
+			' months left'
+	);
+}
+
+ageLeftCalculator(32);
