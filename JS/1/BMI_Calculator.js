@@ -26,3 +26,20 @@ function loveCal() {
 		alert('Your love calculator is ' + n + '%');
 	}
 }
+
+function loveCal() {
+	prompt('Whats your name?');
+	prompt('Whats your lovre name?');
+	var n = Math.floor(Math.random() * 100 + 1);
+	if (n >= 70) {
+		alert(
+			'Your love calculator is ' + n + '% You love each other like ALOT :p'
+		);
+	} else if (n > 30 && n < 70) {
+		alert('Your love calculator is ' + n + '% You can make it better :p');
+	} else {
+		alert('Your love calculator is ' + n + '% your love is like oil and water');
+	}
+}
+
+loveCal();
