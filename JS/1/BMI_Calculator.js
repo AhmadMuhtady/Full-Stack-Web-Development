@@ -43,3 +43,19 @@ function loveCal() {
 }
 
 loveCal();
+
+function calBmi(weight, hight) {
+	var weight = prompt('What is your weight in kg?');
+	var hight = prompt('what is your hight?');
+	var bmi = weight / Math.pow(hight, 2);
+	var bmi = Math.round(bmi);
+	if (bmi < 18.5) {
+		return 'Your BMI is ' + bmi + ', so you are underweight.';
+	} else if (bmi <= 18.5 && bmi < 24.9) {
+		return 'Your BMI is ' + bmi + ', so you have a normal weight.';
+	} else {
+		return 'Your BMI is ' + bmi + ', so you are overweight.';
+	}
+}
+
+calBmi();
