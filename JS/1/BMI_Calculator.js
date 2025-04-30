@@ -13,3 +13,16 @@ function diceCal() {
 }
 
 diceCal();
+
+function loveCal() {
+	prompt('Whats your name?');
+	prompt('Whats your lovre name?');
+	var n = Math.floor(Math.random() * 100 + 1);
+	if (n > 70) {
+		alert(
+			'Your love calculator is ' + n + '% You love each other like ALOT :p'
+		);
+	} else {
+		alert('Your love calculator is ' + n + '%');
+	}
+}
