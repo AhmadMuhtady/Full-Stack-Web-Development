@@ -102,3 +102,22 @@ function guestLista() {
 
 var name = prompt('please enter your name!');
 guestLista(name);
+
+var numbers = [];
+for (let i = 1; i <= 100; i++) {
+	if (i % 3 == 0 && i % 5 == 0) {
+		console.log('FIZZZBUZZZZ');
+		numbers.push('FIZZZBUZZZZ');
+	} else if (i % 3 == 0) {
+		console.log('FIZZZ');
+		numbers.push('FIZZZ');
+	} else if (i % 5 == 0) {
+		console.log('BUZZZZ');
+		numbers.push('BUZZZZ');
+	} else {
+		console.log(i);
+		numbers.push(i);
+	}
+}
+
+console.log(numbers);
