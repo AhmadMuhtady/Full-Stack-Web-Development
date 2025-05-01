@@ -82,3 +82,23 @@ function leapYear(year) {
 
 var year = parseInt(prompt('please enter a year'));
 leapYear(year);
+
+var guestList = ['ahmad', 'mohammad', 'omar', 'ali'];
+// var name = prompt("please enter your name!");
+
+// if (guestList.includes(name)){
+//     console.log(alert("Welcome, Please come in!"));
+// }else{
+//     console.log(alert("Please Leave!"));
+// }
+
+function guestLista() {
+	if (guestList.includes(name)) {
+		return alert('Welcome, Please come in!');
+	} else {
+		return alert('Please Leave!');
+	}
+}
+
+var name = prompt('please enter your name!');
+guestLista(name);
