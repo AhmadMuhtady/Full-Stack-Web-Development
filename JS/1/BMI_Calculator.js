@@ -59,3 +59,19 @@ function calBmi(weight, hight) {
 }
 
 calBmi();
+
+function leapYear(year) {
+	var dividedBy4 = year / 4;
+	console.log(dividedBy4);
+	var dividedBy100 = year / 100;
+	console.log(dividedBy100);
+	var dividedBy400 = year / 400;
+	console.log(dividedBy400);
+
+	if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+		return alert(year + ' is a leap year!');
+	} else return alert(year + ' is NOT a  leap year!');
+}
+
+var year = parseInt(prompt('please enter a year'));
+leapYear(year);
