@@ -138,4 +138,5 @@ function fizBuzGame(max) {
 	return numbers;
 }
 
-console.log(fizBuzGame(100));
+var reachNumber = prompt('what number you want to reach');
+console.log(fizBuzGame(reachNumber));
