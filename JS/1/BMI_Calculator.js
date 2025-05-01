@@ -60,6 +60,20 @@ function calBmi(weight, hight) {
 
 calBmi();
 
+if (year % 4 === 0) {
+	if (year % 100 === 0) {
+		if (year % 400 === 0) {
+			return 'Leap year.';
+		} else {
+			return 'Not leap year.';
+		}
+	} else {
+		return 'Leap year.';
+	}
+} else {
+	return 'Not leap year.';
+}
+
 function leapYear(year) {
 	if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
 		return alert(year + ' is a leap year!');
