@@ -121,3 +121,21 @@ for (let i = 1; i <= 100; i++) {
 }
 
 console.log(numbers);
+
+function fizBuzGame(max) {
+	var numbers = [];
+	for (let i = 1; i <= max; i++) {
+		if (i % 3 == 0 && i % 5 == 0) {
+			numbers.push('FIZZZBUZZZZ');
+		} else if (i % 3 == 0) {
+			numbers.push('FIZZZ');
+		} else if (i % 5 == 0) {
+			numbers.push('BUZZZZ');
+		} else {
+			numbers.push(i);
+		}
+	}
+	return numbers;
+}
+
+console.log(fizBuzGame(100));
