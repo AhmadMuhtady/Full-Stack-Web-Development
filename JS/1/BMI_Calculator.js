@@ -193,3 +193,21 @@ while (true) {
 }
 
 console.log(arr);
+
+function fibonacciGenerator(arrLeng) {
+	var arr = [0, 1];
+	while (true) {
+		var i = arr[arr.length - 1];
+		var b = arr[arr.length - 2];
+		var next = i + b;
+
+		if (next > arrLeng) {
+			break;
+		}
+
+		arr.push(next);
+	}
+	return console.log(arr);
+}
+
+fibonacciGenerator(30);
