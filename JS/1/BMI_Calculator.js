@@ -140,3 +140,11 @@ function fizBuzGame(max) {
 
 var reachNumber = prompt('what number you want to reach');
 console.log(fizBuzGame(reachNumber));
+
+function whosPaying() {
+	var dinnerList = ['Angela', 'Ben', 'Jenny', 'Michael', 'Chloe'];
+	var howsPayin = dinnerList[Math.floor(Math.random() * dinnerList.length)];
+	return howsPayin + ' is paying for dinner this time';
+}
+
+whosPaying();
