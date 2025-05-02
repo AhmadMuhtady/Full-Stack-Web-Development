@@ -211,3 +211,15 @@ function fibonacciGenerator(arrLeng) {
 }
 
 fibonacciGenerator(30);
+
+function fibonacciGenerator(arrLeng) {
+	var arr = [0, 1];
+	for (let i = 2; ; i++) {
+		var next = arr[i - 1] + arr[i - 2];
+		if (next > arrLeng) break;
+		arr.push(next);
+	}
+	return console.log(arr);
+}
+
+fibonacciGenerator(30);
