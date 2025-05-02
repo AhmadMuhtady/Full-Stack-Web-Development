@@ -157,3 +157,39 @@ function whosPaying(list) {
 }
 
 console.log(whosPaying(dinnerList));
+
+var numbers = [];
+var i = 1;
+function fizBuzGame(numbers) {
+	while (i <= 100) {
+		if (i % 3 === 0 && i % 5 === 0) {
+			numbers.push('FIZZBUZZZ');
+		} else if (i % 3 === 0) {
+			numbers.push('FIZZ');
+		} else if (i % 5 === 0) {
+			numbers.push('BUZZZ');
+		} else {
+			numbers.push(i);
+		}
+		i++;
+	}
+}
+
+fizBuzGame(numbers);
+console.log(numbers);
+
+var arr = [0, 1];
+
+while (true) {
+	var i = arr[arr.length - 1];
+	var b = arr[arr.length - 2];
+	var next = i + b;
+
+	if (next > 20) {
+		break;
+	}
+
+	arr.push(next);
+}
+
+console.log(arr);
