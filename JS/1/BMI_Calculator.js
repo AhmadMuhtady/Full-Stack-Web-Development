@@ -148,3 +148,12 @@ function whosPaying() {
 }
 
 whosPaying();
+
+var dinnerList = ['Angela', 'Ben', 'Jenny', 'Michael', 'Chloe'];
+
+function whosPaying(list) {
+	var payer = list[Math.floor(Math.random() * list.length)];
+	return payer + ' is paying for dinner this time.';
+}
+
+console.log(whosPaying(dinnerList));
