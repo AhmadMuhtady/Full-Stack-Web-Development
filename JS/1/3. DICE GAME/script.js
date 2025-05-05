@@ -1,22 +1,26 @@
-function hitme() {
+const dice1 = document.querySelector('#dice1-img');
+const dice2 = document.querySelector('#dice2-img');
+
+function testLuck() {
 	var n = Math.floor(Math.random() * 6 + 1);
-	if (n === 1) {
-		return 1;
-	} else if (n === 2) {
-		return 2;
-	} else if (n === 3) {
-		return 3;
-	} else if (n === 4) {
-		return 4;
-	} else if (n === 5) {
-		return 5;
-	} else if (n === 6) {
-		return 6;
+	return n;
+}
+
+function rollDice() {
+	const n = testLuck();
+	const m = testLuck();
+	dice1.src = './img/images/dice' + n + '.png';
+	dice2.src = './img/images/dice' + m + '.png';
+}
+
+console.log(rollDice());
+
+function whoWins() {
+	rollDice();
+	if (n > m) {
 	}
 }
 
-console.log(hitme());
-
 document.body.querySelector('button').addEventListener('click', () => {
-	console.log(hitme());
+	console.log(rollDice());
 });
