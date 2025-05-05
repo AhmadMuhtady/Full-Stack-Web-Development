@@ -1,0 +1,18 @@
+body {
+	background-color: rgb(39, 1, 36);
+	font-family: 'Edu QLD Beginner', cursive;
+	font-optical-sizing: auto;
+	font-weight: <weight>;
+	font-style: normal;
+}
+
+h1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+	text-align: center;
+	color: blue;
+	font-size: 3rem;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
