@@ -51,3 +51,10 @@ h1 {
 	border-radius: 30px;
 	margin-top: 20px;
 }
+
+.winner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	justify-content: center;
+}

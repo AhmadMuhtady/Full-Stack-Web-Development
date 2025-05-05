@@ -18,6 +18,9 @@ console.log(rollDice());
 function whoWins() {
 	rollDice();
 	if (n > m) {
+		return '1 wins';
+	} else {
+		return '2 wins';
 	}
 }
 
