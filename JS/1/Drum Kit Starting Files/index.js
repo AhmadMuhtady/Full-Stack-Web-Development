@@ -1,5 +1,8 @@
-document.body.querySelector('.w.drum').addEventListener('click', wClick);
-
-function wClick() {
-	alert('its working!!');
+for (let i = 0; i < document.querySelectorAll('.drum').length; i++) {
+	document.body
+		.querySelectorAll('.drum')
+		[i].addEventListener('click', function () {
+			var tom1 = new Audio('sounds/tom-1.mp3');
+			tom1.play();
+		});
 }
