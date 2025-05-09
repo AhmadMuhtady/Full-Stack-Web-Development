@@ -1,3 +1,6 @@
+* {
+	font-family: sans-serif;
+}
 .second-selector code {
 	color: forestgreen;
 }
@@ -13,4 +16,8 @@ code {
 h1 {
 	color: blueviolet;
 	font-family: sans-serif;
+}
+
+li {
+	font-family: inherit;
 }
