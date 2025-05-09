@@ -1,11 +1,16 @@
-h1 {
-	color: blueviolet;
-	font-family: sans-serif;
+.second-selector code {
+	color: forestgreen;
 }
+
 code {
 	font-family: 'Roboto Mono', monospace;
 	font-optical-sizing: auto;
 	font-weight: bold;
 	font-style: normal;
 	color: red;
+}
+
+h1 {
+	color: blueviolet;
+	font-family: sans-serif;
 }
