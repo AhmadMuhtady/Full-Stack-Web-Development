@@ -11,82 +11,87 @@
 			}
 			body {
 				margin: 0;
+				font-family: sans-serif;
 			}
+
 			h1 {
 				background-color: #ff1b68;
 				color: white;
 				padding: 10px;
 				text-align: center;
-				font-family: sans-serif;
 				font-weight: bold;
 				margin-top: 0;
 			}
-
 			h2 {
 				color: #2ddf5c;
+				margin: 16px 5px;
 			}
 
 			.main-header {
 				background-color: #2ddf5c;
-				padding: 0px 16px;
+				padding: 8px 16px;
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
 			}
-			li {
-				display: inline-block;
-				padding: 0px;
-				margin: 0;
-			}
-			.main-nav__home {
-				display: inline-block;
-			}
-			.main-header div a {
+			.main-nav__home a {
 				text-decoration: none;
 				color: forestgreen;
 				font-weight: bold;
-				font-size: 22px;
-				vertical-align: middle;
+				font-size: 20px;
+				line-height: 1;
+				padding: 0;
+				margin: 0;
+			}
+			.main-nav__home a:hover,
+			.main-nav__home a:active,
+			ul li a:hover,
+			ul li a:active {
+				color: white;
+				border-bottom: 2px solid white;
+				cursor: pointer;
+				opacity: 0.8;
+				transition: all 0.3s ease;
 			}
 
 			nav {
-				display: inline-block;
-				text-align: right;
-				margin: 0;
-				padding: 0;
-				list-style: none;
-				width: calc(100% - 86px);
+				width: auto;
 			}
 			ul {
-				text-align: right;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				display: flex;
+				gap: 12px;
+			}
+			li {
+				margin: 0;
+				padding: 0;
 			}
 			ul li a {
 				text-decoration: none;
 				color: forestgreen;
-				padding: 0px 5px;
+				font-weight: bold;
+				font-size: 16px;
+				line-height: 1;
+				padding: 4px 8px;
 			}
-
-			.main-header div a:hover {
-				color: white;
-				cursor: pointer;
-				text-decoration: underline;
-				transition: ease;
+			.main-header--cta a {
+				background-color: #ff1b68;
+				border: solid red;
+				padding: 5px;
+				border-radius: 30px;
+				color: rgb(61, 61, 229);
 			}
-			ul li a:hover {
-				color: white;
-				cursor: pointer;
-				text-decoration: underline;
-				transition: ease;
-			}
-			.main-header div a:active {
-				cursor: pointer;
-				text-decoration: underline;
-				opacity: 50%;
-			}
-			ul li a:active {
-				cursor: pointer;
-				text-decoration: underline;
-				opacity: 50%;
+			.main-header--cta a:hover,
+			.main-header--cta a:active {
+				background-color: white;
+				border: solid red;
+				padding: 5px;
+				border-radius: 30px;
+				color: rgb(71, 71, 255);
+				opacity: 0.8;
+				transition: all 0.3s ease;
 			}
 		</style>
 	</head>
@@ -94,22 +99,19 @@
 	<body>
 		<header class="main-header">
 			<div class="main-nav__home">
-				<a href="index.html"> uHost </a>
+				<a href="index.html">uHost</a>
 			</div>
 			<nav>
 				<ul>
-					<li>
-						<a href="packages/index.html">Packages</a>
-					</li>
-					<li>
-						<a href="customers/index.html">Customers</a>
-					</li>
-					<li>
+					<li><a href="packages/index.html">Packages</a></li>
+					<li><a href="customers/index.html">Customers</a></li>
+					<li class="main-header--cta">
 						<a href="start-hosting/index.html">Start Hosting</a>
 					</li>
 				</ul>
 			</nav>
 		</header>
+
 		<main>
 			<section>
 				<h1>Get the freedom you deserve.</h1>
