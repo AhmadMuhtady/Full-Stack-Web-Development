@@ -29,26 +29,64 @@
 			.main-header {
 				background-color: #2ddf5c;
 				padding: 0px 16px;
-				margin-bottom: 0;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
 			}
 			li {
 				display: inline-block;
-				padding: 0px 2px;
+				padding: 0px;
 				margin: 0;
 			}
 			.main-nav__home {
 				display: inline-block;
 			}
+			.main-header div a {
+				text-decoration: none;
+				color: forestgreen;
+				font-weight: bold;
+				font-size: 22px;
+				vertical-align: middle;
+			}
+
 			nav {
 				display: inline-block;
 				text-align: right;
 				margin: 0;
 				padding: 0;
 				list-style: none;
-				width: calc(100% - 58px);
+				width: calc(100% - 86px);
 			}
 			ul {
 				text-align: right;
+			}
+			ul li a {
+				text-decoration: none;
+				color: forestgreen;
+				padding: 0px 5px;
+			}
+
+			.main-header div a:hover {
+				color: white;
+				cursor: pointer;
+				text-decoration: underline;
+				transition: ease;
+			}
+			ul li a:hover {
+				color: white;
+				cursor: pointer;
+				text-decoration: underline;
+				transition: ease;
+			}
+			.main-header div a:active {
+				cursor: pointer;
+				text-decoration: underline;
+				opacity: 50%;
+			}
+			ul li a:active {
+				cursor: pointer;
+				text-decoration: underline;
+				opacity: 50%;
 			}
 		</style>
 	</head>
