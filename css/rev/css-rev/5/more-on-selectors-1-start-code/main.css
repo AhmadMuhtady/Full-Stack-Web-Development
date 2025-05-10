@@ -23,3 +23,7 @@ a {
 .highlighted {
 	border: 2px solid #fa923f;
 }
+
+a.active {
+	color: #521751;
+}
