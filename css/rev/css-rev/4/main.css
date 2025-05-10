@@ -1,0 +1,24 @@
+body {
+	margin: 0;
+}
+
+.boxi,
+.boxi2 {
+	background-color: chartreuse;
+	padding: 10px 16px;
+	border: 2px solid brown;
+	margin: 0;
+	height: 300px;
+	width: 43%;
+	display: inline-block;
+}
+
+h2:hover,
+h2:active {
+	cursor: pointer;
+	display: inline-block;
+	color: white;
+	border-bottom: 5px solid blueviolet;
+	transition: all 0.8 ease;
+	opacity: 80%;
+}
