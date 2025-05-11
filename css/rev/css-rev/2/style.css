@@ -55,6 +55,24 @@ body {
 .recommended .plans__price {
 	color: #07521f;
 }
+
+.plans__button {
+	margin-top: 10px;
+	color: white;
+	background-color: #07521f;
+	font: inherit;
+	padding: 5px;
+	font-weight: 500;
+	border-radius: 8px;
+	cursor: pointer;
+}
+.plans__button:hover,
+.plans__button:active {
+	color: #07521f;
+	background: white;
+	opacity: 0.8;
+	transition: all 0.3s ease;
+}
 /* .section-plans__main {
 	margin-left: 50px;
 } */
