@@ -6,7 +6,7 @@ body {
 	font-family: sans-serif;
 }
 
-h1 {
+.h1-main__header {
 	background-image: url(freedom.jpg);
 	color: white;
 	padding: 10px;
