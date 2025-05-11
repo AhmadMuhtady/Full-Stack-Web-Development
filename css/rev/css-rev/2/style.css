@@ -40,11 +40,17 @@ body {
 	display: inline-block;
 	width: 30%;
 	vertical-align: middle;
+	border: 15px thin black;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
+/* .section-plans__main {
+	margin-left: 50px;
+} */
 article li {
 	text-align: center;
 	display: block;
-	margin-bottom: 3px;
+	margin: 8px 0;
 }
 .main-nav__home a {
 	text-decoration: none;
@@ -112,6 +118,14 @@ ul li a {
 	transition: all 0.3s ease;
 }
 .recommended {
+	background: #19b84c;
+	color: white;
 }
 .plans__recommended {
+	color: #19b84c;
+	background-color: white;
+	padding: 5px;
+	display: inline-block;
+	border-radius: 10px;
+	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
