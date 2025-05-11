@@ -168,3 +168,15 @@ ul li a {
 .key-features .section-plans {
 	color: white;
 }
+
+.key-features ul {
+	color: white;
+	text-align: center;
+}
+.key-features li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	font-size: 20px;
+	font-weight: 500;
+}
