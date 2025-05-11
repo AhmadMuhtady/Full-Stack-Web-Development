@@ -202,3 +202,20 @@ ul li a {
 .main-footer a {
 	color: white;
 }
+.main-footer__links {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.main-footer__link {
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
