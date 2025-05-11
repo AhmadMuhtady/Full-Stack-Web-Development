@@ -19,7 +19,7 @@ body {
 	color: #2ddf5c;
 	margin: 16px 5px;
 	text-align: center;
-	font-size: 22px;
+	font-size: 26px;
 }
 
 .main-header {
@@ -157,4 +157,14 @@ ul li a {
 	display: inline-block;
 	border-radius: 10px;
 	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.key-features {
+	background-color: #ff1b68;
+	padding: 8px;
+	margin-top: 30px;
+}
+
+.key-features .section-plans {
+	color: white;
 }
