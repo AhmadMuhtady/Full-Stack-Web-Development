@@ -223,9 +223,48 @@ ul li a {
 .pak-plans a {
 	text-decoration: none;
 	color: black;
+	text-align: center;
+	vertical-align: middle;
 }
 
 .pak-plans {
-	background-color: #2ddf5c;
-	margin: 10px;
+	background-color: #4df87a;
+	margin: 0 5px;
+	display: inline-block;
+	width: 30%;
+	height: 63vh;
+	text-align: center;
+	vertical-align: middle;
+	border: 3px solid #07521f;
+	padding: 8px;
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.pak-plan {
+	height: 100vh;
+	margin-top: 48px;
+	margin-bottom: 0;
+}
+
+.pak-plans h2 {
+	color: #858585;
+}
+
+.pak-plans p {
+	color: rgb(28, 93, 150);
+	font-style: italic;
+	text-shadow: 1px 1px 1px 1px white;
+	font-size: large;
+}
+
+.pak-plans:hover,
+.pak-plans:active,
+#pre:hover,
+#pre:active {
+	background-color: aliceblue;
+	opacity: 0.8;
+	transition: all 0.3s ease;
+}
+
+#pre {
+	background-color: #07521f;
 }
