@@ -289,12 +289,18 @@ ul li a {
 	background-position: center;
 	z-index: -1;
 }
+.plan-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
 
 .badge {
-	font-size: smaller;
-	color: #ff1b68 !important;
-	position: absolute;
-	z-index: 2;
-	top: 105px;
-	left: 350px;
+	font-size: 0.8rem;
+	color: #ff1b68;
+	background-color: antiquewhite;
+	padding: 4px 8px;
+	border-radius: 4px;
+	justify-self: end;
+	align-self: first self-start;
 }
