@@ -289,3 +289,12 @@ ul li a {
 	background-position: center;
 	z-index: -1;
 }
+
+.badge {
+	font-size: smaller;
+	color: #ff1b68 !important;
+	position: absolute;
+	z-index: 2;
+	top: 105px;
+	left: 350px;
+}
