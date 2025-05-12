@@ -232,9 +232,11 @@ ul li a {
 }
 
 .pak-plans {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background-color: #4df87a;
 	margin: 0 5px;
-	display: inline-block;
 	width: 30%;
 	height: 63vh;
 	text-align: center;
@@ -296,11 +298,13 @@ ul li a {
 }
 
 .badge {
-	font-size: 0.8rem;
+	font-size: 0.5rem;
 	color: #ff1b68;
 	background-color: antiquewhite;
 	padding: 4px 8px;
 	border-radius: 4px;
 	justify-self: end;
 	align-self: first self-start;
+	margin: 0%;
+	/* display: inline-block; */
 }
