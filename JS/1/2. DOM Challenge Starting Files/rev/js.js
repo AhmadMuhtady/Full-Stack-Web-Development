@@ -19,3 +19,15 @@
 // console.log(dev);
 // console.log(times);
 // console.log(mod);
+
+// let d;
+// // d = new Date();
+// // d = new Date('jan, 03, 1993');
+// d = Date.now(new Date());
+// d = d / 60000;
+// console.log(d);
+
+let d = new Date('Jan 3, 1993'); // or any date
+let ms = d.getTime(); // milliseconds since Jan 1, 1970
+let minutes = ms / 60000;
+console.log(minutes);
