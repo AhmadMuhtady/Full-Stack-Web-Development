@@ -13,15 +13,20 @@
 }
 
 .testimonial__image-container {
+	width: 65%;
+	display: inline-block;
 }
 
 .testimonial__image {
+	width: 90%;
+	vertical-align: middle;
 }
 .testimonial__info {
 	text-align: right;
 	padding: 14px;
 	display: inline-block;
 	vertical-align: middle;
+	width: 24%;
 }
 
 #customer-2.testimonial {
