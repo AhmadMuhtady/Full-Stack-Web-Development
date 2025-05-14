@@ -27,7 +27,67 @@
 // d = d / 60000;
 // console.log(d);
 
-let d = new Date('Jan 3, 1993'); // or any date
-let ms = d.getTime(); // milliseconds since Jan 1, 1970
-let minutes = ms / 60000;
-console.log(minutes);
+// let d = new Date('Jan 3, 1993'); // or any date
+// let ms = d.getTime(); // milliseconds since Jan 1, 1970
+// let minutes = ms / 60000;
+// console.log(minutes);
+
+// const arr = [1, 2, 3, 4, 5];
+
+// arr.push(6);
+// arr.unshift(0);
+// arr.reverse();
+// console.log(arr);
+
+// const arr1 = [1, 2, 3, 4, 5];
+// const arr2 = [5, 6, 7, 8, 9, 10];
+
+// // const arr3 = arr1.slice(0, 4).concat(arr2);
+// // const arr3 = [...arr1, ...arr2];
+// // arr3.splice(4, 1);
+// console.log(arr3);
+
+const library = [
+	{
+		title: 'The road ahead',
+		author: 'Bill Gates',
+		status: {
+			own: true,
+			reading: false,
+			read: false,
+		},
+	},
+	{
+		title: 'Steves Jobes',
+		author: 'Walter Isaacson',
+		status: {
+			own: true,
+			reading: false,
+			read: false,
+		},
+	},
+	{
+		title: 'Mocingjay',
+		author: 'Suzanne Collins',
+		status: {
+			own: true,
+			reading: false,
+			read: false,
+		},
+	},
+];
+
+// library[0].status.read = true;
+// library[1].status.read = true;
+// library[2].status.read = true;
+// console.log(library);
+
+const { title: fistBook } = library[0];
+
+console.log(fistBook);
+console.log(library);
+
+const library2 = JSON.stringify(library);
+console.log(library2);
+const library3 = JSON.parse(library2);
+console.log(library3);
