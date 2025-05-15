@@ -160,3 +160,23 @@
 // }
 
 // second();
+
+// function dollarSign(value) {
+// 	return '$' + value;
+// }
+
+// console.log(dollarSign(200));
+
+// const sub = (a, b) => a - b;
+// console.log(sub(2, 4));
+
+// const add = (a) => a - 2;
+// console.log(add(2));
+
+// const userObj = () => ({
+// 	name: 'brad',
+// });
+// console.log(userObj());
+
+// const numbers = [1, 2, 3, 4, 5];
+// numbers.forEach((n) => console.log(n));
