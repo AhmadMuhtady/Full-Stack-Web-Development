@@ -47,47 +47,116 @@
 // // arr3.splice(4, 1);
 // console.log(arr3);
 
-const library = [
-	{
-		title: 'The road ahead',
-		author: 'Bill Gates',
-		status: {
-			own: true,
-			reading: false,
-			read: false,
-		},
-	},
-	{
-		title: 'Steves Jobes',
-		author: 'Walter Isaacson',
-		status: {
-			own: true,
-			reading: false,
-			read: false,
-		},
-	},
-	{
-		title: 'Mocingjay',
-		author: 'Suzanne Collins',
-		status: {
-			own: true,
-			reading: false,
-			read: false,
-		},
-	},
-];
+// const library = [
+// 	{
+// 		title: 'The road ahead',
+// 		author: 'Bill Gates',
+// 		status: {
+// 			own: true,
+// 			reading: false,
+// 			read: false,
+// 		},
+// 	},
+// 	{
+// 		title: 'Steves Jobes',
+// 		author: 'Walter Isaacson',
+// 		status: {
+// 			own: true,
+// 			reading: false,
+// 			read: false,
+// 		},
+// 	},
+// 	{
+// 		title: 'Mocingjay',
+// 		author: 'Suzanne Collins',
+// 		status: {
+// 			own: true,
+// 			reading: false,
+// 			read: false,
+// 		},
+// 	},
+// ];
 
 // library[0].status.read = true;
 // library[1].status.read = true;
 // library[2].status.read = true;
 // console.log(library);
 
-const { title: fistBook } = library[0];
+// const { title: fistBook } = library[0];
 
-console.log(fistBook);
-console.log(library);
+// console.log(fistBook);
+// console.log(library);
 
-const library2 = JSON.stringify(library);
-console.log(library2);
-const library3 = JSON.parse(library2);
-console.log(library3);
+// const library2 = JSON.stringify(library);
+// console.log(library2);
+// const library3 = JSON.parse(library2);
+// console.log(library3);
+
+// const libraries = [
+// 	{
+// 		title: 'To Kill a Mockingbird',
+// 		author: 'Harper Lee',
+// 		status: {
+// 			own: true,
+// 			reading: false,
+// 			read: false,
+// 		},
+// 	},
+// 	{
+// 		title: '1984',
+// 		author: 'George Orwell',
+// 		status: {
+// 			own: true,
+// 			reading: false,
+// 			read: false,
+// 		},
+// 	},
+// 	{
+// 		title: 'The Alchemist',
+// 		author: 'Paulo Coelho',
+// 		status: {
+// 			own: true,
+// 			reading: false,
+// 			read: false,
+// 		},
+// 	},
+// ];
+
+// libraries[0].status.reading = true;
+// libraries[1].status.reading = true;
+// libraries[2].status.reading = true;
+
+// const { title: firstName } = libraries[0];
+// console.log(firstName);
+// console.log(libraries);
+
+// const libraries2 = JSON.stringify(libraries);
+// console.log(libraries2);
+// const libraries3 = JSON.parse(libraries2);
+// console.log(libraries3);
+
+// function whosBuying(...arr) {
+// 	const numberIndex = Math.floor(Math.random() * arr.length);
+
+// 	const item = arr[numberIndex];
+
+// 	console.log(item);
+// }
+
+// whosBuying('ahmad', 'moveBy', 'adam', 'mo', 'omar');
+// const x = 3;
+// function first() {
+// 	const x = 3;
+
+// 	console.log(x);
+// }
+
+// first();
+
+// function second() {
+// 	const y = 4;
+
+// 	console.log(x + y);
+// }
+
+// second();
