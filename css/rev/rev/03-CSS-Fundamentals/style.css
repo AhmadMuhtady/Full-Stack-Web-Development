@@ -16,6 +16,7 @@ h1 {
 	font-size: 26px;
 	text-transform: uppercase;
 	font-style: italic;
+	text-align: center;
 }
 
 h2 {
@@ -68,4 +69,20 @@ aside {
 	border-bottom: 5px solid #1098ad;
 	background-color: #f7f7f7;
 	text-align: center;
+}
+
+li:first-child {
+	font-weight: 700;
+}
+
+a:link {
+	color: #1098ad;
+	text-decoration: none;
+}
+
+a:hover {
+	color: orangered;
+	font-weight: 700;
+	border-bottom: 2px solid orangered;
+	transition: all 0.3 ease-in-out;
 }
