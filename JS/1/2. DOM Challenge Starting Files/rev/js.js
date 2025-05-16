@@ -189,3 +189,23 @@
 
 // const getCelsius = (temp) => ((temp - 32) * 5) / 9;
 // console.log(`the tempreture is ${getCelsius(32)}\xB0 C`);
+
+// const minMax = (arr) => ({
+// 	min: Math.min(...arr),
+// 	max: Math.max(...arr),
+// });
+
+// console.log(minMax([23, 4, 5, 6, 7, 8, 9, 10]));
+
+// ((length, width) => {
+// 	const area = length * width;
+// 	console.log(
+// 		`The Area of a rectangle is lengeth ${length} times width ${width} = ${area}`
+// 	);
+// })(10, 5);
+
+// //A year is a leap year if:
+
+// It is divisible by 4 and not divisible by 100, OR
+
+// It is divisible by 400//
