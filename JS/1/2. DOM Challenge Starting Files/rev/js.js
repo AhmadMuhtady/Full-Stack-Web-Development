@@ -180,3 +180,12 @@
 
 // const numbers = [1, 2, 3, 4, 5];
 // numbers.forEach((n) => console.log(n));
+
+// function getCelious(tempreture) {
+// 	const cel = ((tempreture - 32) * 5) / 9;
+// 	console.log(`the tempreture is ${cel}\xB0 C`);
+// }
+// getCelious(50);
+
+// const getCelsius = (temp) => ((temp - 32) * 5) / 9;
+// console.log(`the tempreture is ${getCelsius(32)}\xB0 C`);
