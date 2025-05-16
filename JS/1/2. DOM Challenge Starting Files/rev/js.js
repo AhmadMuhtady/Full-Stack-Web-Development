@@ -219,3 +219,31 @@
 // } else {
 // 	console.log(`${year} is not a leep year`);
 // }
+
+function calculator(num1, num2, operator) {
+	switch (operator) {
+		case '+':
+			return num1 + num2;
+			break;
+		case '-':
+			return num1 - num2;
+			break;
+		case '*':
+			return num1 * num2;
+			break;
+		case '/':
+			return num1 / num2;
+			break;
+		case '%':
+			return num1 % num2;
+			break;
+		default:
+			return 'please enter the right oprerator (-,+,*,/,%) ';
+	}
+}
+
+const num1 = parseInt(prompt('please enter first number'));
+const num2 = parseInt(prompt('please enter second number'));
+const operator = prompt('please enter an oprerator (-,+,*,/,%)');
+
+console.log(calculator(num1, num2, operator));
