@@ -209,3 +209,13 @@
 // It is divisible by 4 and not divisible by 100, OR
 
 // It is divisible by 400//
+
+// let year = parseInt(prompt('enter a year:'));
+
+// if (year % 100 !== 0 || year % 400 == 0) {
+// 	console.log(`${year} is a leep year`);
+// } else if (year % 4 == 0 && year % 100 !== 0) {
+// 	console.log(`${year} is a leep year`);
+// } else {
+// 	console.log(`${year} is not a leep year`);
+// }
