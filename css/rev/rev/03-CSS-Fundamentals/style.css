@@ -1,5 +1,6 @@
 * {
 	margin: 0;
+	margin-left: 2px;
 	padding: 0;
 }
 
@@ -14,22 +15,26 @@ body {
 	margin-bottom: 60px;
 }
 .post-header {
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 
 aside {
 	border-top: 5px solid #1098ad;
 	border-bottom: 5px solid #1098ad;
 	background-color: #f7f7f7;
-	text-align: center;
+	/* text-align: center; */
 	padding: 50px;
+	margin-bottom: 20px;
+	width: 500px;
 }
-
+.article {
+	margin-bottom: 20px;
+}
 h1,
 h2,
 h3 {
 	color: #1098ade7;
-	margin-bottom: 30px 0;
+	margin-bottom: 10px;
 }
 h1 {
 	font-size: 26px;
