@@ -3,6 +3,18 @@ body {
 	color: #444;
 }
 
+.main-header {
+	background: #f7f7f7;
+	padding: 20px 40px;
+}
+
+aside {
+	border-top: 5px solid #1098ad;
+	border-bottom: 5px solid #1098ad;
+	background-color: #f7f7f7;
+	text-align: center;
+}
+
 h1,
 h2,
 h3 {
@@ -40,6 +52,7 @@ li {
 
 .Copyright {
 	font-size: 15px;
+	margin-bottom: 10px;
 }
 
 #author {
@@ -56,19 +69,11 @@ li {
 	list-style: none;
 }
 
-.main-header {
-	background: #f7f7f7;
-}
-
-aside {
-	border-top: 5px solid #1098ad;
-	border-bottom: 5px solid #1098ad;
-	background-color: #f7f7f7;
-	text-align: center;
-}
-
 li:first-child {
 	font-weight: 700;
+}
+li:last-child {
+	margin-bottom: 0;
 }
 
 a:link {
