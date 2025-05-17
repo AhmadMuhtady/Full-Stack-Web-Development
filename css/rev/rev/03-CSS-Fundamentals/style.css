@@ -111,3 +111,8 @@ a:hover {
 	border-bottom: 2px solid orangered;
 	transition: all 0.3 ease-in-out;
 }
+
+.post-image {
+	width: 100%;
+	height: auto;
+}
