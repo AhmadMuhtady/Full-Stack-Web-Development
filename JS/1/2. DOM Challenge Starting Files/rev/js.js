@@ -255,3 +255,81 @@
 // }
 
 // leapYear(1999);
+
+// for (let i = 0; i <= 10; i++) {
+// 	i === 7 ? console.log('youre 7 now') : console.log('number ' + i);
+// }
+
+// for (let i = 1; i <= 10; i++) {
+// 	console.log('number ' + i);
+
+// 	for (let j = 1; j <= 10; j++) {
+// 		console.log(`${j} * ${i} = ${j * i}`);
+// 	}
+// }
+// const names = ['ahmad', 'sara', 'omar', 'ali', 'roni'];
+
+// for (let i = 0; i <= names.length; i++) {
+// 	names[i] === 'sara '
+// 		? console.log('sara is the best')
+// 		: console.log(names[i]);
+// }
+
+// let i = 1;
+
+// while (i <= 5) {
+// 	console.log('number ' + i);
+
+// 	let j = 1;
+// 	while (j <= 5) {
+// 		console.log(`${i} * ${j} = ${i * j}`);
+// 		j++;
+// 	}
+
+// 	i++;
+// }
+
+// let i = 1;
+
+// while (i <= 100) {
+// 	if (i % 3 === 0 && i % 5 === 0) {
+// 		console.log('FizzBuzz');
+// 	} else if (i % 3 === 0) {
+// 		console.log('Fizz');
+// 	} else if (i % 5 === 0) {
+// 		console.log('Buzz');
+// 	} else {
+// 		console.log('number ' + i);
+// 	}
+
+// 	i++;
+// }
+
+// for (i = 1; i <= 20; i++) {
+// 	i % 3 === 0 && i % 5 === 0
+// 		? console.log('FizzBuzz')
+// 		: i % 3 === 0
+// 		? console.log('Fizz')
+// 		: i % 5 === 0
+// 		? console.log('Buzz')
+// 		: console.log('number ' + i);
+// }
+
+// let i = 1;
+
+// do {
+// 	switch (true) {
+// 		case i % 3 === 0 && i % 5 === 0:
+// 			console.log('FizzBuzz');
+// 			break;
+// 		case i % 3 === 0:
+// 			console.log('Fizz');
+// 			break;
+// 		case i % 5 === 0:
+// 			console.log('Buzz');
+// 			break;
+// 		default:
+// 			console.log(i);
+// 	}
+// 	i++;
+// } while (i <= 20);
