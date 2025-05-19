@@ -6,6 +6,7 @@
 body {
 	font-family: sans-serif;
 	color: #444;
+	position: relative;
 }
 
 .container {
@@ -48,6 +49,7 @@ h1 {
 
 h2 {
 	font-size: 40px;
+	position: relative;
 }
 
 h3 {
@@ -118,4 +120,41 @@ a:hover {
 .post-image {
 	width: 100%;
 	height: auto;
+}
+
+/* nav a:link {
+	display: inline-block;
+	padding: 2px;
+	margin: 1px;
+} */
+
+h1::first-letter {
+	font-style: normal;
+	margin-right: 5px;
+}
+h2::after {
+	content: 'TOP';
+	background-color: #ffe70e;
+	color: #444;
+	font-size: 16px;
+	font-weight: bold;
+	display: inline-block;
+	padding: 5px 10px;
+	position: absolute;
+	top: -12px;
+	right: -18px;
+}
+
+.like-buuton {
+	padding: 7px;
+	border-radius: 20px;
+	font-size: large;
+	font-weight: 700;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background-color: slateblue;
+	color: white;
+	position: absolute;
+	cursor: pointer;
+	bottom: 50px;
+	right: 50px;
 }
