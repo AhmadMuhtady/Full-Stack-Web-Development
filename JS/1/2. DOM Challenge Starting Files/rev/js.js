@@ -333,3 +333,9 @@
 // 	}
 // 	i++;
 // } while (i <= 20);
+
+// const names = ['ahmad', 'sara', 'omar', 'ali', 'roni'];
+
+// for (const name of names) {
+// 	console.log(name);
+// }
