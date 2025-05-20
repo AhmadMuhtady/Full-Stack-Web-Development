@@ -339,3 +339,16 @@
 // for (const name of names) {
 // 	console.log(name);
 // }
+
+// const users = [
+// 	{ name: 'Alice', isActive: true, roles: ['admin', 'editor'] },
+// 	{ name: 'Bob', isActive: false, roles: ['editor'] },
+// 	{ name: 'Charlie', isActive: true, roles: ['viewer'] },
+// 	{ name: 'Diana', isActive: true, roles: ['editor', 'viewer'] },
+// ];
+
+// const activeEditorName = users
+// 	.filter((users) => users.isActive && users.roles.includes('editor'))
+// 	.map((users) => users.name);
+
+// console.log(activeEditorName);
