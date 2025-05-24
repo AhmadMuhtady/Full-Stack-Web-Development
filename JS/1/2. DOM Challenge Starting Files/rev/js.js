@@ -2439,14 +2439,14 @@
 
 // let x = Math.floor(Math.random() * 100 + 1);
 
-// let y = Math.floor(Math.random() * 100 + 1);
+// let y = Math.floor(Math.random() * 50 + 1);
 
 // const sum = `${x} + ${y} = ${x + y}`;
 // const sub = `${x} - ${y} = ${x - y}`;
 // const times = `${x} * ${y} = ${x * y}`;
 // const dev = `${x} / ${y} = ${Math.floor(x / y)}`;
 // const mod = `${x} % ${y} = ${x % y}`;
-// const power = `${x} ** ${y} = ${x ** y}`;
+// const power = `${x} ** ${y} = ${Math.pow(x, y)}`;
 
 // console.log('sum = ' + sum);
 // console.log('sub = ' + sub);
@@ -2455,6 +2455,65 @@
 // console.log('mod = ' + mod);
 // console.log('power = ' + power);
 
-// let x = 4;
+// d = new Date();
 
-// console.log(x.__proto__);
+// let x = Intl.DateTimeFormat('en-LB').format(d);
+
+// console.log(d);
+
+// const arr = [1, 2, 3, 4, 5];
+
+// arr.unshift(0);
+// arr.reverse();
+// arr.unshift(6);
+
+// console.log(arr);
+
+// const arr1 = [1, 2, 3, 4, 5];
+// const arr2 = [5, 6, 7, 8, 9, 10];
+// arr1.splice(4);
+// // arr1.concat(arr2);
+// arr3 = arr1.concat(arr2);
+// console.log(arr3);
+
+// const library = [
+// 	{
+// 		title: 'Inception',
+// 		Author: 'Christopher Nolan',
+// 		status: {
+// 			own: true,
+// 			watching: false,
+// 			watched: false,
+// 		},
+// 	},
+// 	{
+// 		title: 'Parasite ',
+// 		Author: 'Bong Joon-ho',
+// 		status: {
+// 			own: true,
+// 			watching: false,
+// 			watched: false,
+// 		},
+// 	},
+// 	{
+// 		title: 'Pulp Fiction',
+// 		Author: 'Quentin Tarantino',
+// 		status: {
+// 			own: true,
+// 			watching: false,
+// 			watched: false,
+// 		},
+// 	},
+// ];
+
+// library[0].status.watching = true;
+// library[1].status.watching = true;
+// library[2].status.watching = true;
+
+// const { title: firstMovie } = library[0];
+
+// const libraries = JSON.stringify(library);
+
+// const libraries2 = JSON.parse(libraries);
+
+// console.log(libraries2);
