@@ -2517,3 +2517,55 @@
 // const libraries2 = JSON.parse(libraries);
 
 // console.log(libraries2);
+
+// function getCelsius(f) {
+// 	return `the tempreture is ${((f - 32) * 5) / 9} \xB0C`;
+// }
+
+// // const getCelsius = (f) => `the tempreture is ${((f - 32) * 5) / 9} \xB0C`;
+
+// console.log(getCelsius(32));
+
+// const minMax = (arr) => ({
+// 	min: Math.min(...arr),
+// 	max: Math.max(...arr),
+// });
+
+// console.log(minMax([1, 2, 3, 4, 5, 6, 7, 8, 9, 5, 0, 10]));
+
+// ((Hight, width) => {
+// 	alert(
+// 		`the area of a traingle is hight ${Hight} times the width ${width} = ${
+// 			Hight * width
+// 		}`
+// 	);
+// })(2, 5);
+
+const num1 = parseInt(prompt('please input first number'));
+const num2 = parseInt(prompt('please input second number'));
+const symbol = prompt('pleae enter the (+,-,x,/,%,^)');
+5;
+switch (symbol) {
+	case '+':
+		5;
+		2;
+		console.log(`sum = ${num1} + ${num2} = ${num1 + num2}`);
+		break;
+	case '-':
+		console.log(`substact = ${num1} - ${num2} = ${num1 - num2}`);
+		break;
+	case 'x':
+		console.log(`times = ${num1} x ${num2} = ${num1 * num2}`);
+		break;
+	case '/':
+		console.log(`devide = ${num1} / ${num2} = ${num1 / num2}`);
+		break;
+	case '%':
+		console.log(`modules = ${num1} % ${num2} = ${num1 % num2}`);
+		break;
+	case '^':
+		console.log(`power = ${num1} + ${num2} = ${num1 ** num2}`);
+		break;
+	default:
+		console.log('Please enter the right symbol');
+}
