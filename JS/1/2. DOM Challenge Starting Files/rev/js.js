@@ -2541,31 +2541,60 @@
 // 	);
 // })(2, 5);
 
-const num1 = parseInt(prompt('please input first number'));
-const num2 = parseInt(prompt('please input second number'));
-const symbol = prompt('pleae enter the (+,-,x,/,%,^)');
-5;
-switch (symbol) {
-	case '+':
-		5;
-		2;
-		console.log(`sum = ${num1} + ${num2} = ${num1 + num2}`);
-		break;
-	case '-':
-		console.log(`substact = ${num1} - ${num2} = ${num1 - num2}`);
-		break;
-	case 'x':
-		console.log(`times = ${num1} x ${num2} = ${num1 * num2}`);
-		break;
-	case '/':
-		console.log(`devide = ${num1} / ${num2} = ${num1 / num2}`);
-		break;
-	case '%':
-		console.log(`modules = ${num1} % ${num2} = ${num1 % num2}`);
-		break;
-	case '^':
-		console.log(`power = ${num1} + ${num2} = ${num1 ** num2}`);
-		break;
-	default:
-		console.log('Please enter the right symbol');
+// const num1 = parseInt(prompt('please input first number'));
+// const num2 = parseInt(prompt('please input second number'));
+// const symbol = prompt('pleae enter the (+,-,x,/,%,^)');
+// 5;
+// switch (symbol) {
+// 	case '+':
+// 		5;
+// 		2;
+// 		console.log(`sum = ${num1} + ${num2} = ${num1 + num2}`);
+// 		break;
+// 	case '-':
+// 		console.log(`substact = ${num1} - ${num2} = ${num1 - num2}`);
+// 		break;
+// 	case 'x':
+// 		console.log(`times = ${num1} x ${num2} = ${num1 * num2}`);
+// 		break;
+// 	case '/':
+// 		console.log(`devide = ${num1} / ${num2} = ${num1 / num2}`);
+// 		break;
+// 	case '%':
+// 		console.log(`modules = ${num1} % ${num2} = ${num1 % num2}`);
+// 		break;
+// 	case '^':
+// 		console.log(`power = ${num1} + ${num2} = ${num1 ** num2}`);
+// 		break;
+// 	default:
+// 		console.log('Please enter the right symbol');
+// }
+
+function calculator(num1, num2, symbol) {
+	switch (symbol) {
+		case '+':
+			5;
+			2;
+			console.log(`sum = ${num1} + ${num2} = ${num1 + num2}`);
+			break;
+		case '-':
+			console.log(`substact = ${num1} - ${num2} = ${num1 - num2}`);
+			break;
+		case 'x':
+			console.log(`times = ${num1} x ${num2} = ${num1 * num2}`);
+			break;
+		case '/':
+			console.log(`devide = ${num1} / ${num2} = ${num1 / num2}`);
+			break;
+		case '%':
+			console.log(`modules = ${num1} % ${num2} = ${num1 % num2}`);
+			break;
+		case '^':
+			console.log(`power = ${num1} + ${num2} = ${num1 ** num2}`);
+			break;
+		default:
+			console.log('Please enter the right symbol');
+	}
 }
+
+calculator(2, 2, '/');
