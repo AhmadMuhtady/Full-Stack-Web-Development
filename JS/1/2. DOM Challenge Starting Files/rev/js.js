@@ -2547,8 +2547,6 @@
 // 5;
 // switch (symbol) {
 // 	case '+':
-// 		5;
-// 		2;
 // 		console.log(`sum = ${num1} + ${num2} = ${num1 + num2}`);
 // 		break;
 // 	case '-':
@@ -2573,8 +2571,6 @@
 function calculator(num1, num2, symbol) {
 	switch (symbol) {
 		case '+':
-			5;
-			2;
 			console.log(`sum = ${num1} + ${num2} = ${num1 + num2}`);
 			break;
 		case '-':
