@@ -2568,29 +2568,42 @@
 // 		console.log('Please enter the right symbol');
 // }
 
-function calculator(num1, num2, symbol) {
-	switch (symbol) {
-		case '+':
-			console.log(`sum = ${num1} + ${num2} = ${num1 + num2}`);
-			break;
-		case '-':
-			console.log(`substact = ${num1} - ${num2} = ${num1 - num2}`);
-			break;
-		case 'x':
-			console.log(`times = ${num1} x ${num2} = ${num1 * num2}`);
-			break;
-		case '/':
-			console.log(`devide = ${num1} / ${num2} = ${num1 / num2}`);
-			break;
-		case '%':
-			console.log(`modules = ${num1} % ${num2} = ${num1 % num2}`);
-			break;
-		case '^':
-			console.log(`power = ${num1} + ${num2} = ${num1 ** num2}`);
-			break;
-		default:
-			console.log('Please enter the right symbol');
-	}
-}
+// function calculator(num1, num2, symbol) {
+// 	switch (symbol) {
+// 		case '+':
+// 			console.log(`sum = ${num1} + ${num2} = ${num1 + num2}`);
+// 			break;
+// 		case '-':
+// 			console.log(`substact = ${num1} - ${num2} = ${num1 - num2}`);
+// 			break;
+// 		case 'x':
+// 			console.log(`times = ${num1} x ${num2} = ${num1 * num2}`);
+// 			break;
+// 		case '/':
+// 			console.log(`devide = ${num1} / ${num2} = ${num1 / num2}`);
+// 			break;
+// 		case '%':
+// 			console.log(`modules = ${num1} % ${num2} = ${num1 % num2}`);
+// 			break;
+// 		case '^':
+// 			console.log(`power = ${num1} + ${num2} = ${num1 ** num2}`);
+// 			break;
+// 		default:
+// 			console.log('Please enter the right symbol');
+// 	}
+// }
 
-calculator(2, 2, '/');
+// calculator(2, 2, '/');
+// let a;
+
+// a = 10 && 20;
+// a = 0 && 20;
+// a = 10 && 20 && 0;
+
+// // a = 10 || 20;
+// // a = 0 || 20;
+
+// // a = 10 ?? null;
+// // a = null ?? 10;
+
+// console.log(a);
