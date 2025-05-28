@@ -2535,7 +2535,7 @@
 
 // ((Hight, width) => {
 // 	alert(
-// 		`the area of a traingle is hight ${Hight} times the width ${width} = ${
+// 		`the area of a triangle is hight ${Hight} times the width ${width} = ${
 // 			Hight * width
 // 		}`
 // 	);
@@ -2607,3 +2607,19 @@
 // // a = null ?? 10;
 
 // console.log(a);
+
+// for (let i = 1; i <= 5; i++) {
+// 	console.log(i);
+
+// 	for (let j = 1; j <= 10; j++) {
+// 		console.log(`${i} * ${j} = ${i * j}`);
+// 	}
+// }
+
+// const names = ['ahmad', 'omar', 'ali', 'abbas'];
+
+// for (let i = 0; i <= names.length; i++) {
+// 	names[i] === 'ahmad'
+// 		? console.log('ahmad is the best')
+// 		: console.log(names[i]);
+// }
