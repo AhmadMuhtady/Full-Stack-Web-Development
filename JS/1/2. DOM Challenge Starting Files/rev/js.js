@@ -2714,3 +2714,69 @@ const companies = [
 // );
 
 // console.log(longCompanies);
+
+// const arr1 = [1, 2, 4, 5, 6];
+
+// const arr2 = arr1.map((number) => number + 2);
+
+// console.log(arr2);
+
+// const arrNames = companies.map((company) => company.name);
+// console.log(arrNames);
+
+// const arr2 = companies.map(
+// 	(company) => `${company.name} - ${company.category}`
+// );
+
+// console.log(arr2);
+
+// const compInfo = companies.map((company) => {
+// 	return {
+// 		name: company.name,
+// 		category: company.category,
+// 	};
+// });
+
+// console.log(compInfo);
+
+// const compLength = companies.map(
+// 	(company) => `${company.name} - ${company.end - company.start} years`
+// );
+
+// console.log(compLength);
+
+// const compLengthObj = companies
+// 	.map((company) => {
+// 		return {
+// 			name: company.name,
+// 			length: company.end - company.start,
+// 		};
+// 	})
+// 	.map((company) => company.length > 10);
+
+// console.log(compLengthObj);
+
+// // 1-
+// const greet = (name) => `Hello, ${name}`;
+// console.log(greet('Alice'));
+
+// const countCharacter = (str) => str.replace(' ', '').length;
+// console.log(countCharacter('hello world'));
+
+// const getSquareRoot = (number) => Math.sqrt(number).toFixed(2);
+// console.log(getSquareRoot(10));
+
+// const capitalLetter = (str) =>
+// 	`${str.charAt().toUpperCase()}${str.substring(1)}`;
+// console.log(capitalLetter('hello world'));
+
+// const multiplyString = (str) => str * 2;
+// console.log(multiplyString('42'));
+
+// const getMax = (num1, num2) => {
+// 	num1 >= num2 ? console.log(num1) : console.log(num2);
+// };
+// console.log(getMax(20, 10));
+
+// const transformString = (str) => str.replaceAll(/a/g, '').replace(/uio/g);
+// console.log(transformString('javascript'));
