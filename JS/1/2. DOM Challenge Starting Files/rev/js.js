@@ -2780,3 +2780,97 @@ const companies = [
 
 // const transformString = (str) => str.replaceAll(/a/g, '').replace(/uio/g);
 // console.log(transformString('javascript'));
+
+// const greet = (name) => 'Hello ' + name;
+// console.log(greet('Alice'));
+
+// const countCharacter = (str) => str.replaceAll(' ', '').length;
+// console.log(countCharacter('hello world today'));
+
+// const getRoot = (number) => Math.sqrt(number).toFixed(2);
+// console.log(getRoot(10));
+
+// const capitalLetter = (str) =>
+// 	str
+// 		.split(' ')
+// 		.map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+// 		.join(' ');
+// console.log(capitalLetter('hello world'));
+
+// const getMax = (num1, num2) => (num1 > num2 ? num1 : num2);
+// console.log(getMax(10, 20));
+
+// const multiplyString = (str) => str * 2;
+// console.log(multiplyString('42'));
+
+// const transformString = (str) =>
+// 	str
+// 		.replace(/[aeiou]/gi, '')
+// 		.split('')
+// 		.reverse()
+// 		.join('');
+// console.log(transformString('javascript'));
+
+// const str1 = 'hello';
+// const str2 = 'world';
+// const str3 = `${str1} ${str2}`;
+// console.log(str3);
+
+// const str4 = 'hello world today';
+// console.log(str4.replaceAll(' ', '').length);
+
+// const str5 = 'hello world';
+// const str6 = str5.toUpperCase();
+// console.log(str6);
+
+// const num1 = 3.14159;
+// const num2 = Math.round(num1);
+// const num3 = Math.floor(num1);
+// const num4 = Math.ceil(num1);
+// console.log(num2, num3, num4);
+
+// const num5 = Math.floor(Math.random() * 100 + 1);
+// console.log(num5);
+
+// const name1 = 'ahmad';
+// const number = 69;
+// console.log(`Hello, my name is ${name1} and my favorite number is ${number}`);
+
+// const age = 32;
+// const currentYear = 2025;
+// const yearBorn = currentYear - age;
+// console.log(`I was born in ${yearBorn}`);
+
+// const firstName = 'ahmad';
+// const secondName = 'ahmad';
+// const initials = `${firstName.charAt(0).toUpperCase()}.${secondName
+// 	.charAt(0)
+// 	.toUpperCase()}`;
+// console.log(initials);
+
+// const number = 5.5;
+// const priceDollars = `$${number.toFixed(2)}`;
+// console.log(priceDollars, typeof priceDollars);
+
+// const word = 'apple';
+// const swap = `${word.charAt(word.length - 1)}${word.slice(1, -1)}${word.charAt(
+// 	0
+// )}`;
+// console.log(swap);
+
+// const mini = Math.floor(Math.random() * 1000);
+// const max = Math.floor(Math.random() * 9999);
+// const randomNumber = Math.floor(Math.random() * 9000 + 1000);
+// const secondDigit = randomNumber.toString().charAt(1);
+// console.log(randomNumber, secondDigit);
+
+// const userName = 'ahmad';
+// const favoriteNumber = 69;
+// const symbol = '@!_';
+// const passWord = `${userName}_${favoriteNumber}${symbol}`;
+// console.log(passWord);
+
+const fruits = ['apple', 'banana', 'cherry'];
+const banana = fruit[1];
+// fruits[0] = 'mango';
+console.log(fruits);
