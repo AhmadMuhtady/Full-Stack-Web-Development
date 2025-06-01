@@ -2954,3 +2954,48 @@ const companies = [
 // const words = ['JavaScript', 'is', 'fun'];
 // const sentence = words.join(' ') + '.';
 // console.log(sentence);
+
+// const person = {
+// 	name: 'Alice',
+// 	age: 25,
+// 	city: 'paris',
+// };
+// console.log(person.name);
+// person.age = 26;
+// person.isStudent = true;
+// console.log(person['city']);
+// delete person.city;
+// console.log(person);
+
+const user = {
+	name: 'John',
+	address: {
+		city: 'London',
+		zip: 'E1 6AN',
+	},
+};
+console.log(user.address.zip);
+console.log('name' in user);
+
+const car = {
+	brand: 'Toyota',
+	model: 'Corolla',
+	year: 2020,
+};
+
+for (let key in car) {
+	console.log(`${key}: ${car[key]}`);
+}
+for (let key in car) {
+	console.log(car[key]);
+}
+
+const obj1 = { a: 1, b: 2 };
+const obj2 = { c: 3, d: 4 };
+const combine = { ...obj1, ...obj2 };
+console.log(combine);
+
+const keyName = 'score';
+const player = {};
+player[keyName] = 100;
+console.log(player);
