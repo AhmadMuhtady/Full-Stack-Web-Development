@@ -2870,7 +2870,87 @@ const companies = [
 // const passWord = `${userName}_${favoriteNumber}${symbol}`;
 // console.log(passWord);
 
-const fruits = ['apple', 'banana', 'cherry'];
-const banana = fruit[1];
+// const fruits = ['apple', 'banana', 'cherry'];
+// const banana = fruits[1];
 // fruits[0] = 'mango';
-console.log(fruits);
+// const fruitCount = fruits.length;
+// fruits.push('orange');
+// fruits.push('peach');
+// fruits.pop();
+// fruits.unshift('peach');
+// console.log(fruitCount);
+// console.log(fruits);
+
+// const colors = ['red', 'green', 'blue', 'yellow'];
+// const lastColor = colors[colors.length - 1];
+// console.log(lastColor);
+
+// const animals = ['dog', 'cat', 'rabbit'];
+// const animal = animals.splice(0, 2);
+// animal.push('hamster');
+// const animalsComplete = animal.concat(animals);
+// console.log(animalsComplete);
+// const numbers = [10, 20, 30, 40];
+// numbers.splice(1, 1);
+// console.log(numbers);
+
+// const girls = ['Anna', 'Bella'];
+// const boys = ['Tom', 'John'];
+// const students = [...girls, ...boys];
+// console.log(students);
+
+// const countries = ['Brazil', 'France', 'Germany', 'Japan'];
+// const indexGermany = countries.indexOf('Germany');
+// console.log(indexGermany);
+
+// const items = ['a', 'b', 'c', 'd', 'e'];
+// const middleItem = items[Math.floor(items.length / 2)];
+// console.log(middleItem);
+
+// const tools = ['hammer', 'wrench', 'screwdriver', 'pliers'];
+// tools.splice(2, 1, 'drill', 'saw');
+// console.log(tools);
+
+// const steps = ['start', 'step1', 'step2', 'step3', 'end'];
+// const coreSteps = steps.splice(1, -1);
+// console.log(coreSteps);
+
+// const drinks = ['coke', 'water', 'juice'];
+// const drinksNew = drinks.reverse();
+// const firstLetter = [
+// 	drinksNew[0].charAt(0),
+// 	drinksNew[1].charAt(0),
+// 	drinksNew[2].charAt(0),
+// ];
+// console.log(firstLetter);
+
+// const grid = [];
+// const arr1 = [1, 2];
+// const arr2 = [3, 4];
+// const arr3 = [5, 6];
+// grid.push(arr1, arr2, arr3);
+// console.log(grid);
+
+// const matrix = [
+// 	[1, 2],
+// 	[3, 4],
+// 	[5, 6],
+// ];
+// const spread = matrix.flat();
+// console.log(spread);
+
+// const names = ['John', 'Amelia', 'Steve'];
+// const lastName = names[names.length - 1];
+// const char = lastName.charAt(lastName.length - 2);
+// console.log(char);
+
+// const nums = [10, 20, 30, 40, 50, 60];
+// const numRev = nums.splice(2, 4);
+// console.log(nums);
+
+// const scores = [300, 100, 400, 200];
+// const sort = scores.sort((a, b) => b - a);
+
+// const words = ['JavaScript', 'is', 'fun'];
+// const sentence = words.join(' ') + '.';
+// console.log(sentence);
