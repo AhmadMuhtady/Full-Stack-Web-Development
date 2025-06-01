@@ -2967,35 +2967,146 @@ const companies = [
 // delete person.city;
 // console.log(person);
 
-const user = {
-	name: 'John',
-	address: {
-		city: 'London',
-		zip: 'E1 6AN',
-	},
-};
-console.log(user.address.zip);
-console.log('name' in user);
+// const user = {
+// 	name: 'John',
+// 	address: {
+// 		city: 'London',
+// 		zip: 'E1 6AN',
+// 	},
+// };
+// console.log(user.address.zip);
+// console.log('name' in user);
 
-const car = {
-	brand: 'Toyota',
-	model: 'Corolla',
-	year: 2020,
-};
+// const car = {
+// 	brand: 'Toyota',
+// 	model: 'Corolla',
+// 	year: 2020,
+// };
 
-for (let key in car) {
-	console.log(`${key}: ${car[key]}`);
-}
-for (let key in car) {
-	console.log(car[key]);
-}
+// for (let key in car) {
+// 	console.log(`${key}: ${car[key]}`);
+// }
+// for (let key in car) {
+// 	console.log(car[key]);
+// }
 
-const obj1 = { a: 1, b: 2 };
-const obj2 = { c: 3, d: 4 };
-const combine = { ...obj1, ...obj2 };
-console.log(combine);
+// const obj1 = { a: 1, b: 2 };
+// const obj2 = { c: 3, d: 4 };
+// const combine = { ...obj1, ...obj2 };
+// console.log(combine);
 
-const keyName = 'score';
-const player = {};
-player[keyName] = 100;
-console.log(player);
+// const keyName = 'score';
+// const player = {};
+// player[keyName] = 100;
+// console.log(player);
+
+// const data = {
+// 	user: {
+// 		profile: {
+// 			location: {
+// 				city: 'Paris',
+// 				country: 'France',
+// 			},
+// 		},
+// 	},
+// };
+
+// console.log(data.user.profile.location.city);
+// console.log(data['user']['profile']['location']['city']);
+
+// const laptop = {
+// 	brand: 'Dell',
+// 	ram: '16GB',
+// 	cpu: 'i7',
+// 	screen: '15 inch',
+// };
+// const keyNumber = Object.keys(laptop).length;
+// console.log(keyNumber);
+
+// const customer = {
+// 	name: 'Alice',
+// 	orders: {
+// 		favorites: ['burger', 'pizza', 'fries'],
+// 	},
+// };
+
+// console.log(customer.orders.favorites[1]);
+
+// const original = { name: 'Lana', age: 30 };
+// const clone = { ...original, age: 31 };
+// console.log(clone);
+
+// const brand = 'Nike';
+// const size = 42;
+// const color = 'black';
+// const shoe = {
+// 	brand,
+// 	size,
+// 	color,
+// };
+// console.log(shoe);
+
+// const part1 = { a: 1, b: { x: 10 } };
+// const part2 = { c: 3, b: { y: 20 } };
+// const part3 = {
+// 	a: part1.a,
+// 	b: { ...part1.b, ...part2.b },
+// 	c: part2.c,
+// };
+// console.log(part3);
+
+// const settings = {
+// 	theme: 'dark',
+// 	language: 'en',
+// 	layout: 'grid',
+// };
+// const keyToRemove = 'language';
+// delete settings[keyToRemove];
+// console.log(settings);
+
+// const scores = { math: 90, english: 85 };
+// const arr1 = [];
+// for (let key in scores) {
+// 	arr1.push([key, scores[key]]);
+// }
+// console.log(arr1);
+
+// const store = {
+// 	fruits: {
+// 		tropical: ['mango', 'banana'],
+// 	},
+// };
+// store.fruits.tropical[1] = 'kiwi';
+// console.log(store);
+
+// const book = { title: '1984', author: 'Orwell' };
+// if (!('year' in book)) {
+// 	book.year - 1949;
+// }
+// console.log(book);
+
+// const user = { profile: { email: 'test@mail.com' } };
+// const userEmail = user.profile.email;
+// console.log(userEmail);
+
+// const settings = { theme: 'dark', font: 'Arial' };
+// const toRemove = 'font';
+// delete settings[toRemove];
+// console.log(settings);
+
+// const store = { inventory: { drinks: ['water', 'juice'] } }; // juice is better than cola shame on you :p
+// store.inventory.drinks[1] = 'Cola';
+// console.log(store);
+
+// const original = { name: 'Lana', age: 30, address: { city: 'Paris' } };
+// const clone = {
+// 	...original,
+// 	age: 31,
+// 	address: { ...original.address, city: 'London' },
+// };
+
+// const book = { title: '1984', author: 'Orwell' };
+// if (!book.year) {
+// 	book.year = 1949;
+// }
+// console.log(book);
