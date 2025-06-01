@@ -3110,3 +3110,19 @@ const companies = [
 // 	book.year = 1949;
 // }
 // console.log(book);
+
+// const today = new Date();
+// console.log(today);
+
+// const currentDate = new Date();
+// const currentYear = currentDate.getFullYear();
+// console.log(currentYear);
+
+// const currentMonth = new Date().getMonth() + 1;
+// console.log(currentMonth);
+
+// const currentDay = new Date().getDay();
+// console.log(currentDay);
+
+// const myBirthday = new Date(1993, 0, 3);
+// console.log(myBirthday);
