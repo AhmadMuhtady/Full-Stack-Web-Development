@@ -3126,3 +3126,6 @@ const companies = [
 
 // const myBirthday = new Date(1993, 0, 3);
 // console.log(myBirthday);
+
+const date = new Date(day, month, year);
+console.log(date);
