@@ -3127,5 +3127,270 @@ const companies = [
 // const myBirthday = new Date(1993, 0, 3);
 // console.log(myBirthday);
 
-const date = new Date(day, month, year);
-console.log(date);
+// const date = new Date();
+// const formatDay = date.getDay() + 1;
+// const formatMonth = date.getMonth() + 1;
+// const formatYear = date.getFullYear();
+// const formattedDate = `${formatDay}/${formatMonth}/${formatYear}`;
+// console.log(formattedDate);
+
+// const easyDate = new Intl.DateTimeFormat('en-GB').format(date);
+// console.log(easyDate);
+
+// const date1 = new Date(2025, 0, 1); // Jan 1, 2025
+// const date2 = new Date(2025, 4, 31); // May 31, 2025
+// const numberBetween = Math.round((date2 - date1) / (1000 * 60 * 60 * 24));
+// console.log(numberBetween);
+
+// const today = new Date();
+// const futureDate = new Date(today);
+// futureDate.setDate(futureDate.getDate() + 7);
+// console.log(futureDate);
+
+// const year = 2024;
+// if (year % 4 === 0) {
+// 	if (year % 100 === 0) {
+// 		if (year % 400 === 0) {
+// 			console.log(true);
+// 		} else {
+// 			console.log(false);
+// 		}
+// 	} else {
+// 		console.log(true);
+// 	}
+// } else {
+// 	console.log(false);
+// }
+
+// if ((year % 4 === 0 && year % 100 != 0) || year % 400 === 0) {
+// 	console.log(true);
+// } else {
+// 	console.log(false);
+// }
+// const days = [
+// 	'Sunday',
+// 	'Monday',
+// 	'Tuesday',
+// 	'Wednesday',
+// 	'Thursday',
+// 	'Friday',
+// 	'Saturday',
+// ];
+// const now = new Date();
+// const dayNow = days[now.getDay()];
+// console.log(dayNow);
+
+// how to add 1 year from today
+// const yearFromToday = today.setFullYear(today.getFullYear() + 1);
+// console.log(today.toDateString());
+// 	myBirthday.setFullYear(myBirthday.getFullYear()) + 1
+// ) /
+// 	(1000 * 60 * 60 * 24 * 30 * 12);
+
+// console.log(myBirthday);
+// console.log(nextBirthDay);
+// const myBirthday = new Date('1993-01-03');
+// const daysTillBirthDay = (myBirthday) => {
+// 	const today = new Date();
+// 	const todayYear = today.getFullYear();
+
+// 	const birthDay = new Date(myBirthday);
+// 	birthDay.setFullYear(todayYear);
+
+// 	if (birthDay < today) {
+// 		birthDay.setFullYear(todayYear + 1);
+// 	}
+// 	const difference = (birthDay - today) / (1000 * 60 * 60 * 24);
+// 	return Math.ceil(difference);
+// };
+
+// console.log(daysTillBirthDay(myBirthday));
+
+// const validCalendarDate = (str) => {
+// 	const [inputYear, inputMonth, inputDay] = str.split('-').map(Number);
+// 	const date = new Date(str);
+// 	const dateDay = date.getDate();
+// 	const dateMonth = date.getMonth();
+// 	const dateYear = date.getFullYear();
+
+// 	if (
+// 		inputYear === dateYear &&
+// 		inputMonth - 1 === dateMonth &&
+// 		inputDay === dateDay
+// 	) {
+// 		console.log(`${date} is a true Date`);
+// 	} else {
+// 		console.log(`${date} is not a true Date`);
+// 	}
+// };
+
+// validCalendarDate('2025-02-30');
+
+// const timeDifference = (str1, str2) => {
+// 	const firstTime = str1.split(':');
+// 	const secondTime = str2.split(':');
+// 	const [h1, m1, s1] = firstTime.map(Number);
+// 	const [h2, m2, s2] = secondTime.map(Number);
+// 	const total1 = h1 * 3600 + m1 * 60 + s1;
+// 	const total2 = h2 * 3600 + m2 * 60 + s2;
+// 	const diff = Math.abs(total1 - total2);
+// 	const hours = Math.floor(diff / 3600);
+// 	const minutes = Math.floor((diff % 3600) / 60);
+// 	const seconds = diff % 60;
+
+// 	return `Time difference is ${hours}:${minutes}:${seconds}`;
+// };
+
+// console.log(timeDifference('14:35:00', '18:20:15'));
+
+// const greet = (name) => `Hello, ${name}`;
+// console.log(greet('Alice'));
+
+// isEven = (number) => {
+// 	if (number % 2 === 0) {
+// 		return `${number} is Even`;
+// 	} else if (number % 1 === 0) {
+// 		return `${number} is Odd`;
+// 	}
+// };
+// console.log(isEven(100));
+
+// const max = (num1, num2) => (num1 > num2 ? num1 : num2);
+// console.log(max(9, 5));
+
+// const IntroduceYourSelf = (name, age) =>
+// 	`Hello my name is ${name} and Im ${age} years old`;
+// console.log(IntroduceYourSelf('Alice', 32));
+
+// const calculator = (num1, num2, opp) => {
+// 	switch (opp) {
+// 		case '+':
+// 			return `${num1} + ${num2} = ${num1 + num2}`;
+// 			break;
+// 		case '-':
+// 			return `${num1} - ${num2} = ${num1 - num2}`;
+// 			break;
+// 		case '*':
+// 			return `${num1} x ${num2} = ${num1 * num2}`;
+// 			break;
+// 		case '/':
+// 			return `${num1} / ${num2} = ${num1 / num2}`;
+// 			break;
+// 		default:
+// 			return 'Please enter the right opp(+,-,/,*)';
+// 	}
+// };
+
+// console.log(calculator(1, 2, '*'));
+
+// const isPrime = (number) => {
+// 	if (number < 2) return false;
+// 	for (let i = 2; i < number; i++) {
+// 		if (number % i === 0) {
+// 			return false;
+// 		}
+// 	}
+// 	return true;
+// };
+
+// console.log(isPrime(9));
+
+// const countVowels = (str) => {
+// 	let count = 0;
+// 	for (let letter of str.toLowerCase()) {
+// 		if (letter === 'a') {
+// 			count++;
+// 		} else if (letter === 'e') {
+// 			count++;
+// 		} else if (letter === 'u') {
+// 			count++;
+// 		} else if (letter === 'o') {
+// 			count++;
+// 		} else if (letter === 'i') {
+// 			count++;
+// 		}
+// 	}
+// 	return count;
+// };
+
+// console.log(countVowels('JavaScript')); // 3
+
+// const countVowels = (str) => {
+// 	let count = 0;
+// 	for (let letter of str.toLowerCase()) {
+// 		if ('aoeiu'.includes(letter)) count++;
+// 	}
+// 	return count;
+// };
+
+// console.log(countVowels('JavaScript'));
+
+// const reverseString = (str) => {
+// 	return str.split('').reverse().join('');
+// };
+// console.log(reverseString('JavaScript'));
+
+// const reverseString = (str) => {
+// 	const string = str.split('');
+// 	let reverse = [];
+
+// 	for (let i = string.length - 1; i >= 0; i--) {
+// 		reverse.push(string[i]);
+// 	}
+// 	return reverse.join('');
+// };
+// console.log(reverseString('JavaScript'));
+
+// const uniqueValues = (arr) => {
+// 	const result = [];
+
+// 	for (let item of arr) {
+// 		if (!result.includes(item)) {
+// 			result.push(item);
+// 		}
+// 	}
+
+// 	return result;
+// };
+
+// console.log(uniqueValues([1, 2, 2, 3, 4, 4]));
+
+// const fibonacci = (n) => {
+// 	const arr = [0, 1];
+// 	if (n < 1) {
+// 		return [0];
+// 	} else if (n < 2) {
+// 		return [0, 1];
+// 	}
+
+// 	for (let i = 2; i < n; i++) {
+// 		let next = arr[i - 1] + arr[i - 2];
+// 		arr.push(next);
+// 	}
+
+// 	return arr;
+// };
+
+// console.log(fibonacci(6));
+
+// const isPalindrome = (str) => {
+// 	const string = str.toLowerCase().split('');
+// 	const middle = Math.floor(string.length / 2);
+// 	const firstPart = string.slice(0, middle);
+// 	const secondPart = string
+// 		.slice(string.length % 2 === 0 ? middle : middle + 1)
+// 		.reverse();
+// 	return firstPart.join('') === secondPart.join('');
+// };
+
+// console.log(isPalindrome('racecar'));
+
+// const isPalindrome = (str) => {
+// 	const lower = str.toLowerCase();
+// 	for (let i = 0; i < lower.length / 2; i++) {
+// 		if (lower[i] !== lower[lower.length - 1 - i]) {
+// 			return false;
+// 		}
+// 	}
+// 	return true;
+// };
