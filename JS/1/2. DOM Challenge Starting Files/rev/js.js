@@ -3394,3 +3394,59 @@ const companies = [
 // 	}
 // 	return true;
 // };
+
+// const factorial = (number) => {
+// 	let result = 1;
+// 	for (i = number; i >= 1; i--) {
+// 		result *= i;
+// 	}
+// 	return result;
+// };
+
+// console.log(factorial(5));
+
+// const validatePassword = (str) => {
+// 	const upperCaseLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+// 	const lowerCaseLetters = 'abcdefghijklmnopqrstuvwxyz';
+// 	const numbers = '0123456789';
+// 	const symbols = '!@#$%^&*()_+-=[]{}|;:,.<>?/~`';
+
+// 	const hasUpperCase = [...str].some((char) => upperCaseLetters.includes(char));
+// 	const hasLowerCase = [...str].some((char) => lowerCaseLetters.includes(char));
+// 	const hasNumbers = [...str].some((char) => numbers.includes(char));
+// 	const hasSymbol = [...str].some((char) => symbols.includes(char));
+
+// 	if (str.length < 8) return `Password should be at least 8 characters long`;
+// 	if (!hasUpperCase)
+// 		return `Password should contain at least one Uppercase letter`;
+// 	if (!hasLowerCase)
+// 		return `Password should contain at least one Lowercase letter`;
+// 	if (!hasNumbers) return `Password should contain at least one Number`;
+// 	if (!hasSymbol) return `Password should contain at least one Symbol`;
+
+// 	return true;
+// };
+
+// console.log(validatePassword('Abcd123!'));
+
+// const validatePassword = (str) => {
+// 	const upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+// 	const lower = 'abcdefghijklmnopqrstuvwxyz';
+// 	const nums = '0123456789';
+// 	const syms = '!@#$%^&*()_+-=[]{}|;:,.<>?/~`';
+
+// 	const issues = [];
+
+// 	if (str.length < 8) issues.push('at least 8 characters long');
+// 	if (![...str].some((c) => upper.includes(c)))
+// 		issues.push('an uppercase letter');
+// 	if (![...str].some((c) => lower.includes(c)))
+// 		issues.push('a lowercase letter');
+// 	if (![...str].some((c) => nums.includes(c))) issues.push('a number');
+// 	if (![...str].some((c) => syms.includes(c))) issues.push('a symbol');
+
+// 	if (issues.length > 0) return `Password should contain ${issues.join(', ')}`;
+// 	return true;
+// };
+
+// console.log(validatePassword('abc')); // Gives all missing requirements
