@@ -3450,3 +3450,113 @@ const companies = [
 // };
 
 // console.log(validatePassword('abc')); // Gives all missing requirements
+
+// const fruits = ['apple', 'banana', 'Avocado', 'blueberry', 'apricot'];
+
+// const groupByFirstLetter = (arr) => {
+// 	const a = [];
+// 	const b = [];
+// 	const sorting = [...arr].sort();
+
+// 	for (let item of sorting) {
+// 		const firstChar = item.charAt(0).toLowerCase();
+// 		if (firstChar === 'a') {
+// 			a.push(item);
+// 		} else {
+// 			b.push(item);
+// 		}
+// 	}
+// 	return { a, b };
+// };
+
+// console.log(groupByFirstLetter(fruits));
+
+// const deepEqual = (obj1, obj2) => {
+// 	const arr1 = [];
+// 	const arr2 = [];
+// 	for (let key in obj2) {
+// 		arr1.push([key, scores[key]]);
+// 	}
+// 	return arr2;
+// };
+
+// const a = { name: 'Alice', details: { age: 25, city: 'Paris' } };
+// const b = { name: 'Alice', details: { age: 25, city: 'Paris' } };
+
+// console.log(deepEqual(a, b));
+
+// const string = 'i went to the beach';
+// const arr3 = ['uomi', 'sofi', 'fal', 'kik'];
+
+// for (const word of string) {
+// 	console.log(word);
+// }
+// let message = [];
+// for (let i = 0; i <= 5; i++) {
+// 	message.push('hello');
+// }
+// console.log(message.join(' '));
+
+// let message1 = '';
+// for (let i = 0; i <= 5; i++) {
+// 	message1 += ' Hello';
+// }
+// console.log(message1);
+
+// for (let i = 1; i <= 10; i++) {
+// 	console.log(i);
+// }
+
+// let sum = 0;
+// for (let i = 1; i <= 100; i++) {
+// 	sum += i;
+// }
+// console.log(sum);
+
+// let double = 1;
+
+// while (double <= 100) {
+// 	double *= 2;
+// }
+// console.log(double);
+// let luckyNumber = 0;
+// while (luckyNumber < 7) {
+// 	luckyNumber++;
+// }
+// console.log(luckyNumber);
+
+// let i = 6;
+// do {
+// 	i++;
+// } while (i < 5);
+// console.log(i);
+
+const names = ['ahmad', 'mohammad', 'omar'];
+
+// for (name of names) {
+// 	console.log('hello ' + name);
+// }
+// let i = 0;
+// for (name of names) {
+// 	if (name.length > 4) {
+// 		i++;
+// 	}
+// }
+// console.log(i);
+
+const users = {
+	name: 'ahmad',
+	age: 32,
+	isAdmin: true,
+};
+
+// for (let key in users) {
+// 	console.log(`${key} = ${users[key]}`);
+// }
+let i = 0;
+for (let key in users) {
+	if (key.charAt(0) === 'n') {
+		i++;
+	}
+}
+console.log(i);
