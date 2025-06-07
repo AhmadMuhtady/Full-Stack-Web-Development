@@ -2685,17 +2685,17 @@
 
 // console.log(evenNumbers);
 
-const companies = [
-	{ name: 'Company One', category: 'Finance', start: 1981, end: 2004 },
-	{ name: 'Company Two', category: 'Retail', start: 1992, end: 2008 },
-	{ name: 'Company Three', category: 'Auto', start: 1999, end: 2007 },
-	{ name: 'Company Four', category: 'Retail', start: 1989, end: 2010 },
-	{ name: 'Company Five', category: 'Technology', start: 2009, end: 2014 },
-	{ name: 'Company Six', category: 'Finance', start: 1987, end: 2010 },
-	{ name: 'Company Seven', category: 'Auto', start: 1986, end: 1996 },
-	{ name: 'Company Eight', category: 'Technology', start: 2011, end: 2016 },
-	{ name: 'Company Nine', category: 'Retail', start: 1981, end: 1989 },
-];
+// const companies = [
+// 	{ name: 'Company One', category: 'Finance', start: 1981, end: 2004 },
+// 	{ name: 'Company Two', category: 'Retail', start: 1992, end: 2008 },
+// 	{ name: 'Company Three', category: 'Auto', start: 1999, end: 2007 },
+// 	{ name: 'Company Four', category: 'Retail', start: 1989, end: 2010 },
+// 	{ name: 'Company Five', category: 'Technology', start: 2009, end: 2014 },
+// 	{ name: 'Company Six', category: 'Finance', start: 1987, end: 2010 },
+// 	{ name: 'Company Seven', category: 'Auto', start: 1986, end: 1996 },
+// 	{ name: 'Company Eight', category: 'Technology', start: 2011, end: 2016 },
+// 	{ name: 'Company Nine', category: 'Retail', start: 1981, end: 1989 },
+// ];
 
 // const retailsComp = companies.filter(
 // 	(company) => company.category === 'Retail'
@@ -3531,7 +3531,7 @@ const companies = [
 // } while (i < 5);
 // console.log(i);
 
-const names = ['ahmad', 'mohammad', 'omar'];
+// const names = ['ahmad', 'mohammad', 'omar'];
 
 // for (name of names) {
 // 	console.log('hello ' + name);
@@ -3544,19 +3544,271 @@ const names = ['ahmad', 'mohammad', 'omar'];
 // }
 // console.log(i);
 
-const users = {
-	name: 'ahmad',
-	age: 32,
-	isAdmin: true,
-};
+// const users = {
+// 	name: 'ahmad',
+// 	age: 32,
+// 	isAdmin: true,
+// };
 
 // for (let key in users) {
 // 	console.log(`${key} = ${users[key]}`);
 // }
-let i = 0;
-for (let key in users) {
-	if (key.charAt(0) === 'n') {
-		i++;
-	}
-}
-console.log(i);
+// let i = 0;
+// for (let key in users) {
+// 	if (key.charAt(0) === 'n') {
+// 		i++;
+// 	}
+// }
+// console.log(i);
+// const colors = ['red', 'green', 'blue'];
+
+// colors.forEach((color) => console.log(color));
+
+// const names = ['Ali', 'Fatima', 'Khaled'];
+// const nameLengths = [];
+
+// names.forEach((name) => {
+// 	nameLengths.push(name.length);
+// 	console.log(nameLengths);
+// });
+
+// const words = ['elephant', 'cat', 'hippopotamus', 'dog', 'monkey'];
+// let longWords = 0;
+
+// words.forEach((word) => {
+// 	word.length > 5 ? (longWords += 1) : null;
+// });
+// console.log(longWords);
+
+// const numbers = [2, 7, 4, 9, 6, 3, 8];
+// let evenCount = 0;
+// numbers.forEach((number) => {
+// 	if (number % 2 === 0) evenCount++;
+// });
+// console.log(evenCount);
+
+// const people = ['linda', 'george', 'mona'];
+// const capitalizedNames = [];
+// people.forEach((name) => {
+// 	capitalizedNames.push(name.charAt(0).toUpperCase() + name.substring(1));
+// });
+// console.log(capitalizedNames);
+
+// const cart = [
+// 	{ item: 'apple', price: 2, quantity: 4 },
+// 	{ item: 'banana', price: 1, quantity: 6 },
+// 	{ item: 'orange', price: 3, quantity: 2 },
+// ];
+
+// cart.forEach((item) => {
+// 	console.log(`item: ${item.item}, total Price: ${item.price * item.quantity}`);
+// });
+
+// const books = [
+// 	{ title: 'The Hobbit', pages: 310 },
+// 	{ title: 'Harry Potter', pages: 500 },
+// 	{ title: 'The Catcher in the Rye', pages: 277 },
+// ];
+
+// let totalPages = 0;
+
+// books.forEach((book) => {
+// 	totalPages += book.pages;
+// });
+// console.log(totalPages);
+
+// const products = [
+// 	{ name: 'Laptop', price: 1200 },
+// 	{ name: 'Mouse', price: 25 },
+// 	{ name: 'Keyboard', price: 80 },
+// 	{ name: 'Monitor', price: 300 },
+// ];
+
+// const expensive = [];
+// products.forEach((product) => {
+// 	if (product.price > 100) expensive.push(product.name);
+// });
+// console.log(expensive);
+
+// const users = [
+// 	{ name: 'Alice', role: 'admin', active: true },
+// 	{ name: 'Bob', role: 'user', active: false },
+// 	{ name: 'Charlie', role: 'admin', active: false },
+// 	{ name: 'Dana', role: 'user', active: true },
+// 	{ name: 'Eli', role: 'moderator', active: true },
+// ];
+
+// let summary = {};
+
+// users.forEach((user) => {
+// 	if (user.active) {
+// 		if (summary[user.role]) {
+// 			summary[user.role]++;
+// 		} else {
+// 			summary[user.role] = 1;
+// 		}
+// 	}
+// });
+// console.log(summary);
+// const companies = [
+// 	{ name: 'Company One', category: 'Finance', start: 1981, end: 2004 },
+// 	{ name: 'Company Two', category: 'Retail', start: 1992, end: 2008 },
+// 	{ name: 'Company Three', category: 'Auto', start: 1999, end: 2007 },
+// 	{ name: 'Company Four', category: 'Retail', start: 1989, end: 2010 },
+// 	{ name: 'Company Five', category: 'Technology', start: 2009, end: 2014 },
+// 	{ name: 'Company Six', category: 'Finance', start: 1987, end: 2010 },
+// 	{ name: 'Company Seven', category: 'Auto', start: 1986, end: 1996 },
+// 	{ name: 'Company Eight', category: 'Technology', start: 2011, end: 2016 },
+// 	{ name: 'Company Nine', category: 'Retail', start: 1981, end: 1989 },
+// ];
+// // only retail companies
+
+// const retailCompanies = companies.filter((company) => {
+// 	return company.category === 'Retail';
+// });
+// console.log(retailCompanies);
+
+// // companies that started in or after 1980 in or before 2005
+
+// const earlyCompanies = companies.filter((company) => {
+// 	return company.start >= 1980 && company.end <= 2005;
+// });
+// console.log(earlyCompanies);
+
+// // companies lasted more than 10 years
+
+// const longCompanies = companies.filter((company) => {
+// 	return company.end - company.start >= 10;
+// });
+// console.log(longCompanies);
+
+// const names = ['Ali', 'Fatima', 'Khaled', 'Sara'];
+// const longNames = names.filter((name) => name.length > 4);
+
+// console.log(longNames);
+
+// const nums = [-2, 3, -1, 5, -6, 7];
+// const positiveNums = nums.filter((num) => num >= 0);
+// console.log(positiveNums);
+
+// const products = [
+// 	{ name: 'Laptop', inStock: true },
+// 	{ name: 'Mouse', inStock: false },
+// 	{ name: 'Keyboard', inStock: true },
+// ];
+
+// const inStockProducts = products.filter((product) => product.inStock === true);
+// console.log(inStockProducts);
+
+// const students = [
+// 	{ name: 'Lina', grade: 85 },
+// 	{ name: 'Sam', grade: 42 },
+// 	{ name: 'Omar', grade: 73 },
+// 	{ name: 'Noura', grade: 55 },
+// 	{ name: 'Zayd', grade: 91 },
+// ];
+
+// const passedStudents = students.filter((student) => student.grade >= 60);
+// console.log(passedStudents);
+
+// const blogTitles = [
+// 	'Understanding CSS Grid',
+// 	'Intro to JavaScript',
+// 	'Advanced React Patterns',
+// 	'Why I love javascript',
+// 	'Web Development Trends 2025',
+// ];
+
+// const containJS = blogTitles.filter((blogTitle) =>
+// 	blogTitle.toLocaleLowerCase().includes('javascript')
+// );
+// console.log(containJS);
+
+// const users = [
+// 	{ name: 'Ali', role: 'admin', active: true },
+// 	{ name: 'Sara', role: 'user', active: true },
+// 	{ name: 'Khaled', role: 'admin', active: false },
+// 	{ name: 'Maya', role: 'moderator', active: true },
+// 	{ name: 'Zain', role: 'admin', active: true },
+// ];
+// const activeAdmins = users.filter(
+// 	(user) => user.role === 'admin' && user.active === true
+// );
+// console.log(activeAdmins);
+
+// const users = [
+// 	{
+// 		name: 'Ahmad',
+// 		tasks: [
+// 			{ title: 'Do laundry', done: true },
+// 			{ title: 'Cook', done: false },
+// 		],
+// 	},
+// 	{ name: 'Layla', tasks: [{ title: 'Study', done: false }] },
+// 	{
+// 		name: 'Omar',
+// 		tasks: [
+// 			{ title: 'Read book', done: true },
+// 			{ title: 'Workout', done: true },
+// 		],
+// 	},
+// ];
+
+// const taskCompleted = users.filter((user) =>
+// 	user.tasks.some((task) => task.done)
+// );
+// console.log(taskCompleted);
+
+// const orders = [
+// 	{
+// 		id: 1,
+// 		items: [
+// 			{ name: 'Laptop', price: 1200 },
+// 			{ name: 'Mouse', price: 25 },
+// 		],
+// 	},
+// 	{
+// 		id: 2,
+// 		items: [
+// 			{ name: 'Pen', price: 2 },
+// 			{ name: 'Notebook', price: 5 },
+// 		],
+// 	},
+// 	{ id: 3, items: [{ name: 'Phone', price: 300 }] },
+// ];
+
+const companies = [
+	{ name: 'Company One', category: 'Finance', start: 1981, end: 2004 },
+	{ name: 'Company Two', category: 'Retail', start: 1992, end: 2008 },
+	{ name: 'Company Three', category: 'Auto', start: 1999, end: 2007 },
+	{ name: 'Company Four', category: 'Retail', start: 1989, end: 2010 },
+	{ name: 'Company Five', category: 'Technology', start: 2009, end: 2014 },
+	{ name: 'Company Six', category: 'Finance', start: 1987, end: 2010 },
+	{ name: 'Company Seven', category: 'Auto', start: 1986, end: 1996 },
+	{ name: 'Company Eight', category: 'Technology', start: 2011, end: 2016 },
+	{ name: 'Company Nine', category: 'Retail', start: 1981, end: 1989 },
+];
+
+// create an arr of companies name
+
+// const companyNames = companies.map((company) => {
+// 	return company.name;
+// });
+// console.log(companyNames);
+
+// arr company and category
+
+// const companyNameCategory = companies.map(
+// 	(company) => `Name: ${company.name}, Category: ${company.category}`
+// );
+// console.log(companyNameCategory);
+
+// arr of length each comp in year
+// const companyAge = companies.map((company) => {
+// 	return {
+// 		Name: company.name,
+// 		Age: company.end - company.start + ' years',
+// 	};
+// });
+
+// console.log(companyAge);
