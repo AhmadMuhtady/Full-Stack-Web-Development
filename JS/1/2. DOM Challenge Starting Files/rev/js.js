@@ -3777,17 +3777,17 @@
 // 	{ id: 3, items: [{ name: 'Phone', price: 300 }] },
 // ];
 
-const companies = [
-	{ name: 'Company One', category: 'Finance', start: 1981, end: 2004 },
-	{ name: 'Company Two', category: 'Retail', start: 1992, end: 2008 },
-	{ name: 'Company Three', category: 'Auto', start: 1999, end: 2007 },
-	{ name: 'Company Four', category: 'Retail', start: 1989, end: 2010 },
-	{ name: 'Company Five', category: 'Technology', start: 2009, end: 2014 },
-	{ name: 'Company Six', category: 'Finance', start: 1987, end: 2010 },
-	{ name: 'Company Seven', category: 'Auto', start: 1986, end: 1996 },
-	{ name: 'Company Eight', category: 'Technology', start: 2011, end: 2016 },
-	{ name: 'Company Nine', category: 'Retail', start: 1981, end: 1989 },
-];
+// const companies = [
+// 	{ name: 'Company One', category: 'Finance', start: 1981, end: 2004 },
+// 	{ name: 'Company Two', category: 'Retail', start: 1992, end: 2008 },
+// 	{ name: 'Company Three', category: 'Auto', start: 1999, end: 2007 },
+// 	{ name: 'Company Four', category: 'Retail', start: 1989, end: 2010 },
+// 	{ name: 'Company Five', category: 'Technology', start: 2009, end: 2014 },
+// 	{ name: 'Company Six', category: 'Finance', start: 1987, end: 2010 },
+// 	{ name: 'Company Seven', category: 'Auto', start: 1986, end: 1996 },
+// 	{ name: 'Company Eight', category: 'Technology', start: 2011, end: 2016 },
+// 	{ name: 'Company Nine', category: 'Retail', start: 1981, end: 1989 },
+// ];
 
 // create an arr of companies name
 
@@ -3812,3 +3812,432 @@ const companies = [
 // });
 
 // console.log(companyAge);
+
+// square and double
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const squareDouble = numbers
+// 	.map((number) => Math.sqrt(number))
+// 	.map((sqrt) => sqrt * 2);
+// console.log(squareDouble);
+// const evenDouble = numbers
+// 	.filter((numbers) => numbers % 2 === 0)
+// 	.map((number) => number * 2);
+
+// console.log(evenDouble);
+// const nums = [2, 4, 6, 8];
+// const doubleNums = nums.map((num) => num * 2);
+// console.log(doubleNums);
+
+// const names = ['ali', 'sara', 'khaled'];
+// const upperNames = names.map((name) => name.toUpperCase());
+// console.log(upperNames);
+
+// const products = [
+// 	{ name: 'Laptop', price: 1200 },
+// 	{ name: 'Mouse', price: 25 },
+// 	{ name: 'Keyboard', price: 80 },
+// ];
+// const productNames = products.map((product) => product.name);
+// console.log(productNames);
+
+// const users = [{ name: 'Ali' }, { name: 'Sara' }, { name: 'Omar' }];
+
+// const uniqueId = users.map(
+// 	(user, index) => `Name: ${user.name} -- ID: ${index + 1}`
+// );
+// console.log(uniqueId);
+
+// const products = [
+// 	{ name: 'Phone', price: 500 },
+// 	{ name: 'Headphones', price: 150 },
+// ];
+
+// const productPrice = products.map((product) => {
+// 	return {
+// 		Name: product.name,
+// 		Price: '$' + product.price,
+// 	};
+// });
+// console.log(productPrice);
+
+// const students = [
+// 	{ name: 'Lina', grade: 85 },
+// 	{ name: 'Sam', grade: 42 },
+// ];
+
+// const studentGrades = students.map(
+// 	(student) => `${student.name} scored ${student.grade}`
+// );
+
+// console.log(studentGrades);
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// const sum = numbers.reduce(
+// 	(accumulator, currentValue) => accumulator + currentValue
+// );
+// console.log(sum);
+
+// const cart = [
+// 	{ item: 'Phone', price: 500 },
+// 	{ item: 'Headphones', price: 150 },
+// 	{ item: 'Charger', price: 50 },
+// ];
+
+// const total = cart.reduce((acc, product) => acc + product.price, 0);
+
+// console.log(total);
+
+// const names = ['Ali', 'Fatima', 'Omar', 'Zainab', 'Salim'];
+
+// const longNames = names.reduce((acc, name) => {
+// 	return name.length > 4 ? acc + 1 : acc;
+// }, 0);
+// console.log(longNames);
+
+// const words = ['JavaScript', 'is', 'fun'];
+// const sentence = words.reduce((acc, word) => acc + ' ' + word);
+// console.log(sentence);
+
+// const blogs = [
+// 	{ title: 'Intro to JS', category: 'JavaScript' },
+// 	{ title: 'CSS Basics', category: 'CSS' },
+// 	{ title: 'Advanced JS', category: 'JavaScript' },
+// 	{ title: 'Grid vs Flexbox', category: 'CSS' },
+// 	{ title: 'Node.js Overview', category: 'JavaScript' },
+// ];
+
+// const blogCategory = blogs.reduce((acc, blog) => {
+// 	const cat = blog.category;
+// 	if (acc[cat]) {
+// 		acc[cat]++;
+// 	} else {
+// 		acc[cat] = 1;
+// 	}
+
+// 	return acc;
+// }, {});
+// console.log(blogCategory);
+
+// const names = ['Ali', 'Amal', 'Sara', 'Salim', 'Zahra', 'Ziad'];
+// const groupedNames = names.reduce((acc, name) => {
+// 	const firstLatter = name.charAt(0).toUpperCase();
+// 	if (!acc[firstLatter]) {
+// 		acc[firstLatter] = [];
+// 	}
+// 	acc[firstLatter].push(name);
+// 	return acc;
+// }, {});
+
+// console.log(groupedNames);
+
+// const inventory = [
+// 	{ item: 'Laptop', price: 1000, quantity: 4 },
+// 	{ item: 'Mouse', price: 50, quantity: 10 },
+// 	{ item: 'Monitor', price: 300, quantity: 2 },
+// ];
+// const fullCost = inventory.reduce((acc, product, value) => {
+// 	return acc + product.price * product.quantity;
+// }, 0);
+// console.log(fullCost);
+
+// # Array Method Challenges
+
+// ## Challenge 1
+
+// **Instructions:**
+
+// Take the `people` array and create an array called `youngPeople` that stores objects with ONLY `name` and `email` properties of all the people that are 25 and under. The `name` property should have their first and last name.
+
+// ```JavaScript
+
+// const people = [
+// 	{
+// 		firstName: 'John',
+// 		lastName: 'Doe',
+// 		email: 'john@gmail.com',
+// 		phone: '111-111-1111',
+// 		age: 30,
+// 	},
+// 	{
+// 		firstName: 'Jane',
+// 		lastName: 'Poe',
+// 		email: 'jane@gmail.com',
+// 		phone: '222-222-2222',
+// 		age: 25,
+// 	},
+// 	{
+// 		firstName: 'Bob',
+// 		lastName: 'Foe',
+// 		email: 'bob@gmail.com',
+// 		phone: '333-333-3333',
+// 		age: 45,
+// 	},
+// 	{
+// 		firstName: 'Sara',
+// 		lastName: 'Soe',
+// 		email: 'Sara@gmail.com',
+// 		phone: '444-444-4444',
+// 		age: 19,
+// 	},
+// 	{
+// 		firstName: 'Jose',
+// 		lastName: 'Koe',
+// 		email: 'jose@gmail.com',
+// 		phone: '555-555-5555',
+// 		age: 23,
+// 	},
+// ];
+
+// const youngPeople = people
+// 	.filter((person) => person.age <= 25)
+// 	.map((person) => ({
+// 		name: person.firstName + ' ' + person.lastName,
+// 		email: person.email,
+// 	}));
+
+// console.log(youngPeople);
+
+// ## Challenge 2
+
+// Add all of the positive numbers in the array.
+
+// **Expected Result:**
+
+// ```JavaScript
+
+// const numbers = [2, -30, 50, 20, -12, -9, 7];
+
+// const positiveSum = numbers
+// 	.filter((num) => num > 0)
+// 	.reduce((sum, num) => sum + num, 0);
+// const positiveSum = numbers.reduce(
+// 	(sum, num) => (num > 0 ? sum + num : sum),
+// 	0
+// );
+
+// console.log(positiveSum); // 79
+
+// ## Challenge 3
+// Create a new array called `capitalizedWords` with the words from the `words` array with the first letter of each word capitalized.
+
+// const words = ['coder', 'programmer', 'developer'];
+
+// const capitalizedWords = words.map(
+// 	(word) => word.charAt(0).toUpperCase() + word.substring(1)
+// );
+
+// console.log(capitalizedWords);
+
+// const orders = [
+// 	{ customer: 'Ali', total: 250 },
+// 	{ customer: 'Sara', total: 400 },
+// 	{ customer: 'Ali', total: 150 },
+// 	{ customer: 'Khaled', total: 100 },
+// 	{ customer: 'Sara', total: 200 },
+// ];
+
+// const totalPerCustomer = orders.reduce((acc, order) => {
+// 	const total = order.total;
+// 	const cus = order.customer;
+// 	if (acc[cus]) {
+// 		acc[cus] += total;
+// 	} else {
+// 		acc[cus] = total;
+// 	}
+// 	return acc;
+// }, {});
+
+// console.log(totalPerCustomer);
+
+// const sales = [
+// 	{ product: 'Laptop', category: 'Electronics' },
+// 	{ product: 'Phone', category: 'Electronics' },
+// 	{ product: 'Shoes', category: 'Fashion' },
+// 	{ product: 'T-Shirt', category: 'Fashion' },
+// 	{ product: 'Headphones', category: 'Electronics' },
+// ];
+
+// const productPerCategory = sales.reduce((acc, item) => {
+// 	const cat = item.category;
+// 	if (acc[cat]) {
+// 		acc[cat]++;
+// 	} else {
+// 		acc[cat] = 1;
+// 	}
+// 	return acc;
+// }, {});
+// console.log(productPerCategory);
+
+// const employees = [
+// 	{ name: 'Ali', department: 'HR', salary: 3000 },
+// 	{ name: 'Sara', department: 'Engineering', salary: 5000 },
+// 	{ name: 'John', department: 'HR', salary: 3500 },
+// 	{ name: 'Maya', department: 'Engineering', salary: 5500 },
+// 	{ name: 'Zain', department: 'Sales', salary: 4000 },
+// ];
+
+// const salaryPerDepartment = employees.reduce((acc, department) => {
+// 	const sal = department.salary;
+// 	const depart = department.department;
+// 	if (acc[depart]) {
+// 		acc[depart] += sal;
+// 	} else {
+// 		acc[depart] = sal;
+// 	}
+
+// 	return acc;
+// }, {});
+// console.log(salaryPerDepartment);
+
+// const users = [
+// 	{ name: 'Ali', role: 'admin' },
+// 	{ name: 'Sara', role: 'user' },
+// 	{ name: 'Omar', role: 'admin' },
+// 	{ name: 'Maya', role: 'moderator' },
+// 	{ name: 'Zain', role: 'user' },
+// 	{ name: 'Lina', role: 'moderator' },
+// ];
+
+// const userPerRole = users.reduce((acc, user) => {
+// 	const name = user.name;
+// 	const rol = user.role;
+// 	if (acc[rol]) {
+// 		acc[rol].push(name);
+// 	} else {
+// 		acc[rol] = [name];
+// 	}
+// 	return acc;
+// }, {});
+// console.log(userPerRole);
+
+// const users = [
+// 	{ name: 'Ali', role: 'admin', active: true },
+// 	{ name: 'Sara', role: 'user', active: true },
+// 	{ name: 'Omar', role: 'admin', active: false },
+// 	{ name: 'Maya', role: 'moderator', active: true },
+// 	{ name: 'Zain', role: 'admin', active: true },
+// 	{ name: 'Lina', role: 'user', active: false },
+// ];
+
+// const userOverView = users.reduce((acc, user) => {
+// 	const role = user.role;
+// 	const status = user.active;
+
+// 	if (!acc[role]) {
+// 		acc[role] = { active: 0, inactive: 0 };
+// 	}
+
+// 	if (status) {
+// 		acc[role].active++;
+// 	} else {
+// 		acc[role].inactive++;
+// 	}
+
+// 	return acc;
+// }, {});
+// console.log(userOverView);
+
+// const employees = [
+// 	{ name: 'Ali', department: 'Engineering', salary: 5000, active: true },
+// 	{ name: 'Sara', department: 'Engineering', salary: 5200, active: false },
+// 	{ name: 'Omar', department: 'HR', salary: 4000, active: true },
+// 	{ name: 'Lina', department: 'HR', salary: 3900, active: false },
+// 	{ name: 'Zain', department: 'Sales', salary: 4500, active: true },
+// 	{ name: 'Maya', department: 'Sales', salary: 4700, active: false },
+// ];
+
+// const departmentSummary = employees.reduce((acc, employee) => {
+// 	const total = employee.salary;
+// 	const depart = employee.department;
+// 	const status = employee.active;
+// 	const name = employee.name;
+// 	if (!acc[depart]) {
+// 		acc[depart] = {
+// 			active: 0,
+// 			inActive: 0,
+// 			totalSalary: 0,
+// 			names: [],
+// 			employeeNumber: 0,
+// 		};
+// 	}
+// 	if (status) {
+// 		acc[depart].active++;
+// 	} else {
+// 		acc[depart].inActive++;
+// 	}
+// 	acc[depart].totalSalary += total;
+// 	acc[depart].names.push(name);
+// 	acc[depart].employeeNumber++;
+// 	return acc;
+// }, {});
+// console.log(departmentSummary);
+// const users = [
+// 	{ username: 'ali123', active: false },
+// 	{ username: 'sara456', active: false },
+// 	{ username: 'omar789', active: true },
+// 	{ username: 'lina000', active: false },
+// ];
+
+// const firstFalse = users.find((user) => user.active === false);
+// console.log(firstFalse);
+// const firstTrue = users.find((user) => user.active === true);
+// console.log(firstTrue);
+
+// const tickets = [
+// 	{ id: 101, status: 'resolved' },
+// 	{ id: 102, status: 'resolved' },
+// 	{ id: 103, status: 'pending' },
+// 	{ id: 104, status: 'pending' },
+// ];
+
+// const unsolvedTicket = tickets.find((ticket) => ticket.status === 'pending');
+// console.log(unsolvedTicket);
+
+// const users = [
+// 	{ name: 'Ali', online: false },
+// 	{ name: 'Sara', online: false },
+// 	{ name: 'Omar', online: true },
+// 	{ name: 'Lina', online: false },
+// ];
+
+// const onlineUser = users.some((user) => user.online === true);
+// console.log(onlineUser);
+// const userLina = users.some((user) => user.name === 'Lina');
+// console.log(userLina);
+
+// const users = [
+// 	{ name: 'Ali', online: false },
+// 	{ name: 'Sara', online: false },
+// 	{ name: 'Omar', online: false },
+// 	{ name: 'Lina', online: false },
+// ];
+
+// const allOffline = users.every((user) => user.online === false);
+// console.log(allOffline);
+
+// const people = [
+// 	{ name: 'Ali' },
+// 	{ name: 'Sara' },
+// 	{ name: 'Om' },
+// 	{ name: 'Lina' },
+// ];
+// const above3names = people.every((name) => name.name.length > 3);
+// const aboveOrEqual2 = people.every((person) => person.name.length >= 2);
+// console.log(above3names);
+// console.log(aboveOrEqual2);
+
+// const multiplyByFive = (num) => num * 5;
+// console.log(multiplyByFive(5));
+// const toCelsius = (f) => ((f - 32) * 5) / 9;
+// console.log(toCelsius(32));
+// const square = (num) => num ** 2;
+// console.log(square(2));
+// const greet = (name) => `Hello, ${name}`;
+// console.log(greet('ahmad'));
+// const getUserInfo = (name, age) => ({
+// 	name,
+// 	age,
+// });
+// console.log(getUserInfo('ahmad', 32));
