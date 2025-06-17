@@ -29,6 +29,9 @@ body {
 	padding: 20px 40px;
 	margin-bottom: 60px;
 	/* height: 80px; */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 nav {
@@ -197,7 +200,7 @@ nav a:link {
   display: block; */
 
 	margin-right: 30px;
-	margin-top: 10px;
+	/* margin-top: 10px; */
 	display: inline-block;
 }
 
@@ -267,7 +270,7 @@ nav p {
 } */
 
 /* flouts */
-.author {
+/* .author {
 	margin-top: 10px;
 	margin-left: 20px;
 	float: left;
@@ -287,7 +290,7 @@ nav {
 	clear: both;
 } */
 
-.clear-float::after {
+/* .clear-float::after {
 	clear: both;
 	content: '';
 	display: block;
@@ -302,4 +305,27 @@ aside {
 }
 footer {
 	clear: both;
+} */
+/* flex-box */
+.main-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.author-box {
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.author {
+	margin-bottom: 0;
+	margin-left: 15px;
+}
+
+.related-posts {
+	display: flex;
+	/* align-items: center; */
+	/* justify-content: center; */
 }
