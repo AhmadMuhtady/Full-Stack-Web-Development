@@ -28,3 +28,27 @@
 // checkBox.addEventListener('input', onChecked);
 // itemInput.addEventListener('focus', onFocus);
 // itemInput.addEventListener('blur', onBlur);
+const form = document.getElementById('item-form');
+
+// const onSubmit = (e) => {
+// 	e.preventDefault();
+
+// 	const item = document.getElementById('item-input').value;
+// 	const priority = document.getElementById('priority-input').value;
+
+// 	item === '' || priority === '0'
+// 		? alert('please fill in all field')
+// 		: console.log(item, priority);
+// };
+
+const onSubmit2 = (e) => {
+	e.preventDefault();
+	const formData = new FormData(form);
+
+	const item = formData.get('item');
+	const priority = formData.get('priority');
+	console.log(item, priority);
+};
+
+// form.addEventListener('submit', onSubmit);
+form.addEventListener('submit', onSubmit2);
