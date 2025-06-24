@@ -252,53 +252,118 @@
 // 	body.classList.toggle('dark');
 // });
 
-const inputItem = document.querySelector('#item-input');
-const onKeyPress = (e) => {
-	console.log('keypress'); // press the key, only character
-};
+// const inputItem = document.querySelector('#item-input');
+// const onKeyPress = (e) => {
+// 	console.log('keypress'); // press the key, only character
+// };
 // const onKeyUp = (e) => {
 // 	console.log('key UP'); // release of key
 // };
 
-const onkeyDown = (e) => {
-	// console.log('key down'); // keep pressing everything on keyboard
+// const onkeyDown = (e) => {
+// console.log('key down'); // keep pressing everything on keyboard
 
-	// key
-	console.log(e.key);
-	document.querySelector('h1').innerText = e.key;
-	// key code
-	// gives you a code from topical.code -- table of all keycodes
-	if (e.keyCode === 13) {
-		// 13 is keyCode for enter
-		alert('you pressed enter');
-	}
-	// code
-	if (e.code === 'Digit1') {
-		//Capital D
-		console.log('you pressed 1');
-	} else if (e.code === 'KeyF') {
-		// Capital K and F
-		console.log('you pressed F');
+// key
+// console.log(e.key);
+// document.querySelector('h1').innerText = e.key;
+// key code
+// gives you a code from topical.code -- table of all keycodes
+// if (e.keyCode === 13) {
+// 	// 13 is keyCode for enter
+// 	alert('you pressed enter');
+// }
+// // code
+// if (e.code === 'Digit1') {
+// 	//Capital D
+// 	console.log('you pressed 1');
+// } else if (e.code === 'KeyF') {
+// 	// Capital K and F
+// 	console.log('you pressed F');
 
-		// Repeat True or False \
-		if (e.repeat) {
-			console.log(`you are holding down ${e.key}`);
-		}
+// 	// Repeat True or False \
+// 	if (e.repeat) {
+// 		console.log(`you are holding down ${e.key}`);
+// 	}
 
-		console.log('Shift:' + e.shiftKey);
-		console.log('Control:' + e.ctrKey);
-		console.log('Alt:' + e.altKey);
-	}
-	// } else {
-	// 	console.log(e.code);/// KeyS or KeyD
-	// }
-};
+// 	console.log('Shift:' + e.shiftKey);
+// 	console.log('Control:' + e.ctrKey);
+// 	console.log('Alt:' + e.altKey);
+// }
+// } else {
+// 	console.log(e.code);/// KeyS or KeyD
+// }
+// };
 
 // inputItem.addEventListener('keypress', onKeyPress);
 // inputItem.addEventListener('keypress', onKeyPress);
-inputItem.addEventListener('keydown', onkeyDown);
+// inputItem.addEventListener('keydown', onkeyDown);
 // inputItem.addEventListener('keypress', onKeyPress);
 
 // inputItem.addEventListener('keypress', (e) => {
 // 	console.log('key is pressed');
 // });
+
+// const button = document.querySelector('.btn');
+// const div = document.querySelector('form div:nth-child(2)');
+// const form = document.querySelector('form');
+// button.addEventListener('click', (e) => {
+// 	alert('button is clicked');
+// 	e.stopPropagation();// stop bubbling btn => div => form => body
+// });
+
+// div.addEventListener('click', () => {
+// 	alert('div was clicked');
+// });
+
+// form.addEventListener('click', () => {
+// 	alert('form was clicked');
+// });
+
+// document.body.addEventListener('click', () => {
+// 	alert('body was clicked');
+// });
+
+// event delegation // multiple btns
+// const listItem = document.querySelectorAll('li');
+// const list = document.querySelector('ul');
+// listItem.forEach((item) => {
+// 	item.addEventListener('click', (e) => {
+// 		e.target.remove();
+// 	});
+// });
+
+// list.addEventListener('click', (e) => {
+// 	if (e.target.tagName === 'LI') {
+// 		e.target.remove();
+// 	}
+// });
+
+// window.addEventListener('resize', () => {
+// 	document.querySelector(
+// 		'h1'
+// 	).innerText = `Resize to ${window.innerWidth} x ${window.innerHeight}`;
+// });
+
+// window.addEventListener('scroll', () => {
+// 	console.log(`Scrolled: ${window.scrollX} x ${window.scrollY}`);
+
+// 	if (window.scrollY > 700) {
+// 		document.body.style.backgroundColor = 'black';
+// 		document.body.style.color = 'white';
+// 	} else {
+// 		document.body.style.backgroundColor = 'white';
+// 		document.body.style.color = 'black';
+// 	}
+// });
+
+window.addEventListener('focus', () => {
+	document.querySelectorAll('li').forEach((item) => {
+		item.style.color = 'blue';
+	});
+});
+
+window.addEventListener('blur', () => {
+	document.querySelectorAll('li').forEach((item) => {
+		item.style.color = 'black';
+	});
+});
