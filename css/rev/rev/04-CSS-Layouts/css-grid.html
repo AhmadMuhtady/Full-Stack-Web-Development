@@ -45,7 +45,7 @@
 
 			.container--1 {
 				/* STARTER */
-				display: none;
+
 				font-family: sans-serif;
 				background-color: #ddd;
 				font-size: 30px;
@@ -59,6 +59,7 @@
 				/* gap: 30px; */
 				column-gap: 20px;
 				row-gap: 40px;
+				display: none;
 			}
 
 			.container--2 {
@@ -66,12 +67,28 @@
 				font-family: sans-serif;
 				background-color: black;
 				font-size: 40px;
-				margin: 100px;
+				margin: 40px;
 
-				width: 1000px;
+				width: 700px;
 				height: 600px;
 
 				/* CSS GRID */
+				display: grid;
+				grid-template-columns: 125px 200px 125px;
+				grid-template-rows: 250px 100px;
+				gap: 50px;
+
+				/* align tracks inside container
+				distribute empty space */
+				justify-content: center;
+				align-content: center;
+				/* align items inside cells */
+				align-items: end;
+				justify-items: end;
+			}
+			.el--3 {
+				align-self: center;
+				justify-self: center;
 			}
 		</style>
 	</head>
