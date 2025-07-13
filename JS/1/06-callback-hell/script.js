@@ -38,23 +38,23 @@
 // 	console.log('promise consumed...');
 // });
 
-const getUser = new Promise((resolve, reject) => {
-	// do something async after time is out
+// const getUser = new Promise((resolve, reject) => {
+// 	// do something async after time is out
 
-	setTimeout(() => {
-		let error = false;
+// 	setTimeout(() => {
+// 		let error = false;
 
-		if (!error) {
-			resolve({ name: 'john', age: 30 });
-		} else {
-			reject('Error: something went wrong');
-		}
-	}, 1000);
-});
+// 		if (!error) {
+// 			resolve({ name: 'john', age: 30 });
+// 		} else {
+// 			reject('Error: something went wrong');
+// 		}
+// 	}, 1000);
+// });
 
-getUser
-	.then((user) => console.log(user))
-	.catch((error) => console.log(error))
-	.finally(() => console.log('the promise has been resolved or rejected'));
+// getUser
+// 	.then((user) => console.log(user))
+// 	.catch((error) => console.log(error))
+// 	.finally(() => console.log('the promise has been resolved or rejected'));
 
-console.log('hello from gs');
+// console.log('hello from gs');
