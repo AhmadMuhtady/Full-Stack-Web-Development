@@ -47,3 +47,35 @@ const promise = new Promise((resolve, reject) => {
 // 	console.log(data);
 // };
 // getPosts();
+
+// try {
+// 	console.log(x);
+// } catch (error) {
+// 	console.log('Error: ' + error);
+// }
+
+// const double = (number) => {
+// 	if (isNaN(number)) {
+// 		throw new Error(number + ' is Not a Number');
+// 	}
+// 	return number * 2;
+// };
+
+// try {
+// 	const y = double('e');
+// 	console.log(y);
+// } catch (error) {
+// 	console.log(error);
+// }
+
+const getUser = async () => {
+	try {
+		const res = await fetch('https://jsonplaceholder.typicode.com/users');
+		const data = await res.json();
+		console.log(data);
+	} catch (error) {
+		console.log(error);
+	}
+};
+
+getUser();
