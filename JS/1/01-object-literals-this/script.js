@@ -47,22 +47,22 @@
 // console.log(strList instanceof String);
 // console.log(strObj instanceof String);
 
-function Rectangle(name, width, hight) {
-	(this.name = name),
-		(this.width = width),
-		(this.hight = hight),
-		(this.area = function () {
-			return this.hight * this.width;
-		});
-}
+// function Rectangle(name, width, hight) {
+// 	(this.name = name),
+// 		(this.width = width),
+// 		(this.hight = hight),
+// 		(this.area = function () {
+// 			return this.hight * this.width;
+// 		});
+// }
 
-const rect1 = new Rectangle('Rectangle 1', 20, 20);
-const rect2 = new Rectangle('Rectangle 2', 30, 20);
-const rect3 = new Rectangle('Rectangle 3', 40, 20);
+// const rect1 = new Rectangle('Rectangle 1', 20, 20);
+// const rect2 = new Rectangle('Rectangle 2', 30, 20);
+// const rect3 = new Rectangle('Rectangle 3', 40, 20);
 
 // console.log(rect1.name, rect2.width, rect3.area());
 
-rect1.color = 'red';
+//
 // console.log(rect1);
 // rect2.perimeter = () => 2 * (rect2.width + rect2.hight);
 // console.log(rect2.perimeter());
@@ -83,8 +83,62 @@ rect1.color = 'red';
 // 	console.log(`${key} - ${value}`);
 // }
 
-Object.entries(rect1).forEach(([key, value]) => {
-	if (typeof value !== 'function') {
-		console.log(`${key} - ${value}`);
-	}
-});
+// Object.entries(rect1).forEach(([key, value]) => {
+// 	if (typeof value !== 'function') {
+// 		console.log(`${key} - ${value}`);
+// 	}
+// });
+
+function Rectangle(name, width, hight) {
+	this.name = name;
+	this.width = width;
+	this.hight = hight;
+}
+
+// Rectangle.prototype.area = function () {
+// 	return this.hight * this.width;
+// };
+// Rectangle.prototype.perimeter = function () {
+// 	return 2 * (this.hight + this.width);
+// };
+// Rectangle.prototype.isSquare = function () {
+// 	return this.hight === this.width;
+// };
+// Rectangle.prototype.newName = function (newName) {
+// 	return (this.name = newName);
+// };
+
+// const rect1 = new Rectangle('Rectangle 1', 20, 20);
+// const rect2 = new Rectangle('Rectangle 2', 30, 20);
+// const rect3 = new Rectangle('Rectangle 3', 40, 20);
+// console.log(rect1.area());
+// console.log(rect1.perimeter());
+// console.log(rect1.isSquare());
+// console.log(rect1.newName('rectangle-1'));
+// console.log(rect1);
+
+const rectanglePrototype = {
+	area: function () {
+		return this.width * this.hight;
+	},
+	perimeter: function () {
+		return 2 * (this.width + this.hight);
+	},
+	isSquare: function () {
+		return this.hight === this.width;
+	},
+};
+
+function createRectangle(width, hight) {
+	return Object.create(rectanglePrototype, {
+		hight: {
+			value: hight,
+		},
+		width: {
+			value: width,
+		},
+	});
+}
+
+const rec1 = createRectangle(10, 20);
+console.log(rec1);
