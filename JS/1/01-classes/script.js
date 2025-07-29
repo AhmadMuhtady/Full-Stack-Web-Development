@@ -84,3 +84,17 @@
 // const rec1 = new Rectangle('Rectangle 1, 20,30');
 // console.log(rec1);
 // console.log(Rectangle.getClass());
+
+class App {
+	constructor() {
+		this.serverName = 'localhost';
+		const btn = document.getElementById('btn');
+		btn.addEventListener('click', this.getServerName.bind(this));
+	}
+
+	getServerName() {
+		console.log(this.serverName);
+	}
+}
+
+const app = new App();
