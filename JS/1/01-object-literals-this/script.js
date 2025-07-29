@@ -117,28 +117,61 @@ function Rectangle(name, width, hight) {
 // console.log(rect1.newName('rectangle-1'));
 // console.log(rect1);
 
-const rectanglePrototype = {
-	area: function () {
-		return this.width * this.hight;
-	},
-	perimeter: function () {
-		return 2 * (this.width + this.hight);
-	},
-	isSquare: function () {
-		return this.hight === this.width;
-	},
-};
+// const rectanglePrototype = {
+// 	area: function () {
+// 		return this.width * this.hight;
+// 	},
+// 	perimeter: function () {
+// 		return 2 * (this.width + this.hight);
+// 	},
+// 	isSquare: function () {
+// 		return this.hight === this.width;
+// 	},
+// };
 
-function createRectangle(width, hight) {
-	return Object.create(rectanglePrototype, {
-		hight: {
-			value: hight,
-		},
-		width: {
-			value: width,
-		},
-	});
+// function createRectangle(width, hight) {
+// 	return Object.create(rectanglePrototype, {
+// 		hight: {
+// 			value: hight,
+// 		},
+// 		width: {
+// 			value: width,
+// 		},
+// 	});
+// }
+
+// const rec1 = createRectangle(10, 20);
+// console.log(rec1);
+
+function Shape(name) {
+	this.name = name;
 }
 
-const rec1 = createRectangle(10, 20);
+Shape.prototype.logName = function () {
+	console.log(`Shape Name: ${this.name}`);
+};
+
+function Rectangle(name, hight, width) {
+	Shape.call(this, name);
+	this.hight = hight;
+	this.width = width;
+}
+// inherits shape prototype
+Rectangle.prototype = Object.create(Shape.prototype);
+Circle.prototype = Object.create(Shape.prototype);
+
+function Circle(name, radius) {
+	Shape.call(this, name);
+	this.radius = radius;
+}
+
+// Set prototype constructors
+Rectangle.prototype.constructor = Rectangle;
+Circle.prototype.constructor = Circle;
+const rec1 = new Rectangle('Rectangle 1', 10, 10);
 console.log(rec1);
+const cir1 = new Circle('Circle 1', 30);
+console.log(cir1);
+
+rec1.logName();
+cir1.logName();
