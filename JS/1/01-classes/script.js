@@ -64,3 +64,23 @@
 
 // console.log(rect instanceof Rectangle);
 // console.log(rect instanceof Shape);
+
+// class Rectangle {
+// 	constructor(name, width, hight) {
+// 		this.name = name;
+// 		this.width = width;
+// 		this.hight = hight;
+// 	}
+
+// 	area() {
+// 		return this.width * this.hight;
+// 	}
+
+// 	static getClass() {
+// 		return 'Rectangle';
+// 	}
+// }
+
+// const rec1 = new Rectangle('Rectangle 1, 20,30');
+// console.log(rec1);
+// console.log(Rectangle.getClass());
