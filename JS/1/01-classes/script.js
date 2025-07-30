@@ -85,16 +85,55 @@
 // console.log(rec1);
 // console.log(Rectangle.getClass());
 
-class App {
-	constructor() {
-		this.serverName = 'localhost';
-		const btn = document.getElementById('btn');
-		btn.addEventListener('click', this.getServerName.bind(this));
+// class App {
+// 	constructor() {
+// 		this.serverName = 'localhost';
+// 		const btn = document.getElementById('btn');
+// 		btn.addEventListener('click', this.getServerName.bind(this));
+// 	}
+
+// 	getServerName() {
+// 		console.log(this.serverName);
+// 	}
+// }
+
+// const app = new App();
+
+class Person {
+	constructor(firstName, lastName) {
+		this._firstName = firstName;
+		this._lastName = lastName;
 	}
 
-	getServerName() {
-		console.log(this.serverName);
+	get firstName() {
+		return this.capitalizeFirst(this._firstName);
+	}
+
+	set firstName(value) {
+		this._firstName = this.capitalizeFirst(value);
+	}
+
+	get lastName() {
+		return this.capitalizeFirst(this._lastName);
+	}
+
+	set lastName(value) {
+		this._lastName = this.capitalizeFirst(value);
+	}
+
+	get fullName() {
+		return `${this._firstName} ${this._lastName}`;
+	}
+
+	capitalizeFirst(value) {
+		return value.charAt(0).toUpperCase() + value.slice(1);
 	}
 }
 
-const app = new App();
+const person1 = new Person('john', 'doe');
+console.log(person1.firstName);
+console.log(person1.lastName);
+person1.firstName = 'joe';
+person1.lastName = 'smith';
+console.log(person1);
+console.log(person1.fullName);
