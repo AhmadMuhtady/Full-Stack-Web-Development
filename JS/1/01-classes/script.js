@@ -99,41 +99,117 @@
 
 // const app = new App();
 
-class Person {
-	constructor(firstName, lastName) {
-		this._firstName = firstName;
-		this._lastName = lastName;
-	}
+// getters and setter in a class
+// class Person {
+// 	constructor(firstName, lastName) {
+// 		this._firstName = firstName;
+// 		this._lastName = lastName;
+// 	}
 
-	get firstName() {
-		return this.capitalizeFirst(this._firstName);
-	}
+// 	get firstName() {
+// 		return this.capitalizeFirst(this._firstName);
+// 	}
 
-	set firstName(value) {
-		this._firstName = this.capitalizeFirst(value);
-	}
+// 	set firstName(value) {
+// 		this._firstName = this.capitalizeFirst(value);
+// 	}
 
-	get lastName() {
-		return this.capitalizeFirst(this._lastName);
-	}
+// 	get lastName() {
+// 		return this.capitalizeFirst(this._lastName);
+// 	}
 
-	set lastName(value) {
-		this._lastName = this.capitalizeFirst(value);
-	}
+// 	set lastName(value) {
+// 		this._lastName = this.capitalizeFirst(value);
+// 	}
 
-	get fullName() {
-		return `${this._firstName} ${this._lastName}`;
-	}
+// 	get fullName() {
+// 		return `${this._firstName} ${this._lastName}`;
+// 	}
 
-	capitalizeFirst(value) {
-		return value.charAt(0).toUpperCase() + value.slice(1);
-	}
-}
+// 	capitalizeFirst(value) {
+// 		return value.charAt(0).toUpperCase() + value.slice(1);
+// 	}
+// }
 
-const person1 = new Person('john', 'doe');
-console.log(person1.firstName);
-console.log(person1.lastName);
-person1.firstName = 'joe';
-person1.lastName = 'smith';
-console.log(person1);
-console.log(person1.fullName);
+// const person1 = new Person('john', 'doe');
+// console.log(person1.firstName);
+// console.log(person1.lastName);
+// person1.firstName = 'joe';
+// person1.lastName = 'smith';
+// console.log(person1);
+// console.log(person1.fullName);
+
+// getters and setter in a constructor function
+
+// function Person(firstName, lastName) {
+// 	this._firstName = firstName;
+// 	this._lastName = lastName;
+
+// 	Object.defineProperty(this, 'firstName', {
+// 		get: function () {
+// 			return (this._firstName =
+// 				firstName.charAt(0).toUpperCase() + firstName.slice(1));
+// 		},
+// 		set: function (value) {
+// 			this._firstName = value;
+// 		},
+// 	});
+
+// 	Object.defineProperty(this, 'lastName', {
+// 		get: function () {
+// 			return (this._lastName =
+// 				lastName.charAt(0).toUpperCase() + lastName.slice(1));
+// 		},
+// 		set: function (value) {
+// 			this._lastName = value;
+// 		},
+// 	});
+
+// 	Object.defineProperty(this, 'fullName', {
+// 		get: function () {
+// 			return `${this.firstName} ${this.lastName}`;
+// 		},
+// 	});
+// }
+
+// const person1 = new Person('john', 'doe');
+
+// // Person.prototype.fullName = function (firstName, lastName) {
+// // 	return `${this.firstName} ${this.lastName}`;
+// // };
+
+// console.log(person1.firstName);
+// console.log(person1.lastName);
+// // console.log(person1.fullName());
+// console.log(person1.fullName);
+
+// //Object Literal
+
+// const PersonObject = {
+// 	_firstName: 'jane',
+// 	_lastName: 'doe',
+
+// 	get firstName() {
+// 		return this._firstName.charAt(0).toUpperCase() + this._firstName.slice(1);
+// 	},
+
+// 	set firstName(value) {
+// 		this._firstName = value;
+// 	},
+// 	get lastName() {
+// 		return this._lastName.charAt(0).toUpperCase() + this._lastName.slice(1);
+// 	},
+
+// 	set lastName(value) {
+// 		this._lastName = value;
+// 	},
+
+// 	get fullName() {
+// 		return `${this.firstName} ${this.lastName}`;
+// 	},
+// };
+
+// const person2 = Object.create(PersonObject);
+// console.log(person2.firstName);
+// console.log(person2.lastName);
+// console.log(person2.fullName);
