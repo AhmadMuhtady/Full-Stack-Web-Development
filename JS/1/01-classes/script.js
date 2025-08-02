@@ -216,52 +216,71 @@
 
 // Private Property Convention hiding info
 
-class Wallet {
-	#balance = 0;
-	#transactions = [];
+// class Wallet {
+// 	#balance = 0;
+// 	#transactions = [];
 
-	deposit(amount) {
-		this.#processDeposit(amount);
-		this.#balance += amount;
-	}
+// 	deposit(amount) {
+// 		this.#processDeposit(amount);
+// 		this.#balance += amount;
+// 	}
 
-	withdraw(amount) {
-		if (amount > this.#balance) {
-			console.log(`insufficient fund`);
-			return;
-		}
+// 	withdraw(amount) {
+// 		if (amount > this.#balance) {
+// 			console.log(`insufficient fund`);
+// 			return;
+// 		}
 
-		this.#processWithdraw(amount);
-		this.#balance -= amount;
-	}
+// 		this.#processWithdraw(amount);
+// 		this.#balance -= amount;
+// 	}
 
-	#processDeposit(amount) {
-		console.log(`Depositing ${amount}`);
-		this.#transactions.push({
-			type: 'Deposit',
-			amount,
-		});
-	}
+// 	#processDeposit(amount) {
+// 		console.log(`Depositing ${amount}`);
+// 		this.#transactions.push({
+// 			type: 'Deposit',
+// 			amount,
+// 		});
+// 	}
 
-	#processWithdraw(amount) {
-		console.log(`Withdrawing ${amount}`);
-		this.#transactions.push({
-			type: 'Withdraw',
-			amount,
-		});
-	}
+// 	#processWithdraw(amount) {
+// 		console.log(`Withdrawing ${amount}`);
+// 		this.#transactions.push({
+// 			type: 'Withdraw',
+// 			amount,
+// 		});
+// 	}
 
-	get balance() {
-		return `$${this.#balance}`;
-	}
+// 	get balance() {
+// 		return `$${this.#balance}`;
+// 	}
 
-	get transactions() {
-		return this.#transactions;
-	}
-}
+// 	get transactions() {
+// 		return this.#transactions;
+// 	}
+// }
 
-const wallet = new Wallet();
-wallet.deposit(500);
-wallet.withdraw(100);
-console.log(wallet.transactions);
-console.log(wallet.balance);
+// const wallet = new Wallet();
+// wallet.deposit(500);
+// wallet.withdraw(100);
+// console.log(wallet.transactions);
+// console.log(wallet.balance);
+
+const rectObj = {
+	name: 'Rectangle 1',
+	width: 10,
+	hight: 10,
+};
+
+Object.defineProperty(rectObj, 'name', {
+	writable: false, // change the value
+	configurable: false, // for deleting
+	enumerable: false, // for loops
+});
+
+let descriptor = Object.getOwnPropertyDescriptor(rectObj, 'name');
+
+console.log(descriptor);
+
+rectObj.name = 'new Name';
+console.log(rectObj.name);
