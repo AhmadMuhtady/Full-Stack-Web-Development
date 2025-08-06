@@ -272,15 +272,39 @@ const rectObj = {
 	hight: 10,
 };
 
-Object.defineProperty(rectObj, 'name', {
-	writable: false, // change the value
-	configurable: false, // for deleting
-	enumerable: false, // for loops
-});
+// Object.defineProperty(rectObj, 'name', {
+// 	writable: false, // change the value
+// 	configurable: false, // for deleting
+// 	enumerable: false, // for loops
+// });
 
-let descriptor = Object.getOwnPropertyDescriptor(rectObj, 'name');
+// let descriptor = Object.getOwnPropertyDescriptor(rectObj, 'name');
 
-console.log(descriptor);
+// console.log(descriptor);
 
-rectObj.name = 'new Name';
-console.log(rectObj.name);
+// rectObj.name = 'new Name';
+// console.log(rectObj.name);
+
+const rectObject = {
+	name: 'Rectangle 1',
+	width: 10,
+	hight: 10,
+};
+
+Object.seal(rectObject);
+
+let descriptors = Object.getOwnPropertyDescriptors(rectObject);
+// console.log(descriptors);
+rectObj.color = 'red';
+delete rectObject.name;
+rectObject.width = 20;
+// console.log(rectObject);
+
+const CircleObject = {
+	name: 'Circle 1',
+	radius: 30,
+};
+
+Object.freeze(CircleObject);
+descriptors = Object.getOwnPropertyDescriptors(CircleObject);
+console.log(descriptors);
