@@ -49,24 +49,46 @@
 // console.log(app.next());
 // console.log(app.next()); // covered all the array
 
-const app = {
-	teams: ['Red Sox', 'Yankees', 'Astro', 'Dodgers'],
-	[Symbol.iterator]: function () {
-		let nextIndex = 0;
-		const teams = this.teams;
-		return {
-			next() {
-				return nextIndex < teams.length
-					? { value: teams[nextIndex++], done: false }
-					: { done: true };
-			},
-		};
-	},
-};
+// const app = {
+// 	teams: ['Red Sox', 'Yankees', 'Astro', 'Dodgers'],
+// 	[Symbol.iterator]: function () {
+// 		let nextIndex = 0;
+// 		const teams = this.teams;
+// 		return {
+// 			next() {
+// 				return nextIndex < teams.length
+// 					? { value: teams[nextIndex++], done: false }
+// 					: { done: true };
+// 			},
+// 		};
+// 	},
+// };
 
-const iterator = app[Symbol.iterator]();
-console.log(iterator.next().value);
+// const iterator = app[Symbol.iterator]();
+// console.log(iterator.next().value);
 
-for (const team of app) {
-	console.log(team);
+// for (const team of app) {
+// 	console.log(team);
+// }
+
+function* createTeamIterators(teams) {
+	for (let i = 0; i < teams.length; i++) {
+		yield teams[i];
+	}
 }
+
+const teams = ['Red Sox', 'Yankees', 'Astro', 'Dodgers'];
+const iterator = createTeamIterators(teams);
+// console.log(iterator.next());
+// console.log(iterator.next());
+// console.log(iterator.next());
+// console.log(iterator.next());
+// console.log(iterator.next());
+
+// for (const team of createTeamIterators(teams)) {
+// 	console.log(team);
+// }
+
+console.log([...createTeamIterators(teams)]);
+const [first, second, third] = createTeamIterators(teams);
+console.log(first, second, third);
