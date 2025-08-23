@@ -85,10 +85,10 @@ class Queue {
 
 	// Remove item from the front
 	dequeues() {
-		if (this.isEmpty()) return 'Undefined';
+		if (this.isEmpty()) return undefined;
 		const item = this._items[this._front];
+		this._items[this._front] = undefined; // help GC
 		this._front++;
-		// Optional: reset array if empty to avoid wasted space
 		if (this._front === this._count) {
 			this.clear();
 		}
@@ -121,7 +121,7 @@ q.enqueues('item 2');
 q.enqueues('item 3');
 q.enqueues('item 4');
 
-console.log(q.dequeues()); // "item 1"
+q.dequeues(); // "item 1"
 console.log(q.peek()); // "item 2"
 console.log(q.length()); // 3
 console.log(q);
