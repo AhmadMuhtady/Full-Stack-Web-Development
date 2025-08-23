@@ -86,12 +86,22 @@ class Queue {
 	// Remove item from the front
 	dequeues() {
 		if (this.isEmpty()) return undefined;
+
+		// 1. Get the item at the "front"
 		const item = this._items[this._front];
-		this._items[this._front] = undefined; // help GC
+
+		// 2. Explicitly mark that slot empty
+		this._items[this._front] = undefined; // helps garbage collector free memory sooner
+
+		// 3. Move the front pointer forward
 		this._front++;
+
+		// 4. If we've consumed everything, reset
 		if (this._front === this._count) {
 			this.clear();
 		}
+
+		// 5. Return dequeued value
 		return item;
 	}
 
