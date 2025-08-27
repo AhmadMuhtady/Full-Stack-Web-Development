@@ -65,64 +65,64 @@
 
 // Queues
 
-// class Queue {
-// 	constructor() {
-// 		this._items = [];
-// 		this._count = 0; // next empty slot at the back
-// 		this._front = 0; // index of the first item
-// 	}
+class Queue {
+	constructor() {
+		this._items = [];
+		this._count = 0; // next empty slot at the back
+		this._front = 0; // index of the first item
+	}
 
-// 	// Check if the queue is empty
-// 	isEmpty() {
-// 		return this.length() === 0;
-// 	}
+	// Check if the queue is empty
+	isEmpty() {
+		return this.length() === 0;
+	}
 
-// 	// Add item to the back
-// 	enqueues(item) {
-// 		this._items[this._count] = item;
-// 		this._count++;
-// 	}
+	// Add item to the back
+	enqueues(item) {
+		this._items[this._count] = item;
+		this._count++;
+	}
 
-// 	// Remove item from the front
-// 	dequeues() {
-// 		if (this.isEmpty()) return undefined;
+	// Remove item from the front
+	dequeues() {
+		if (this.isEmpty()) return undefined;
 
-// 		// 1. Get the item at the "front"
-// 		const item = this._items[this._front];
+		// 1. Get the item at the "front"
+		const item = this._items[this._front];
 
-// 		// 2. Explicitly mark that slot empty
-// 		this._items[this._front] = undefined; // helps garbage collector free memory sooner
+		// 2. Explicitly mark that slot empty
+		this._items[this._front] = undefined; // helps garbage collector free memory sooner
 
-// 		// 3. Move the front pointer forward
-// 		this._front++;
+		// 3. Move the front pointer forward
+		this._front++;
 
-// 		// 4. If we've consumed everything, reset
-// 		if (this._front === this._count) {
-// 			this.clear();
-// 		}
+		// 4. If we've consumed everything, reset
+		if (this._front === this._count) {
+			this.clear();
+		}
 
-// 		// 5. Return dequeued value
-// 		return item;
-// 	}
+		// 5. Return dequeued value
+		return item;
+	}
 
-// 	// Peek at the front item without removing it
-// 	peek() {
-// 		if (this.isEmpty()) return 'No items in Queue';
-// 		return this._items[this._front];
-// 	}
+	// Peek at the front item without removing it
+	peek() {
+		if (this.isEmpty()) return 'No items in Queue';
+		return this._items[this._front];
+	}
 
-// 	// Number of items in the queue
-// 	length() {
-// 		return this._count - this._front;
-// 	}
+	// Number of items in the queue
+	length() {
+		return this._count - this._front;
+	}
 
-// 	// Reset the queue
-// 	clear() {
-// 		this._items = [];
-// 		this._count = 0;
-// 		this._front = 0;
-// 	}
-// }
+	// Reset the queue
+	clear() {
+		this._items = [];
+		this._count = 0;
+		this._front = 0;
+	}
+}
 
 // // ✅ Example usage
 // const q = new Queue();
