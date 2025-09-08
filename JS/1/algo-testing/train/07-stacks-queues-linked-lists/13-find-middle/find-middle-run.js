@@ -8,5 +8,8 @@ list.add(3);
 list.add(4);
 list.add(5);
 list.add(6);
+list.add(7);
 
-console.log(findMiddle(list));
+const result = findMiddle(list);
+console.log(result);
+console.log(result.data);
